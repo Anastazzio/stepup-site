@@ -1,0 +1,54 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Χρησιμοποιεί το Netlify Identity + Git Gateway για login —
+# ο χρήστης βλέπει απλή φόρμα email/password, όχι GitHub.
+publish_mode: simple
+media_folder: "assets/images/uploads"
+public_folder: "/assets/images/uploads"
+
+locale: "en"
+
+collections:
+  - name: "blog_en"
+    label: "Blog (English)"
+    files:
+      - name: "articles"
+        label: "Άρθρα"
+        file: "content/blog-en.json"
+        fields:
+          - { label: "Άρθρα", name: "articles", widget: "list", label_singular: "Άρθρο", summary: "{{title}}", fields: [
+              { label: "Τίτλος", name: "title", widget: "string" },
+              { label: "Περιγραφή", name: "description", widget: "text" },
+              { label: "Κύρια εικόνα (featured);", name: "featured", widget: "boolean", default: false, hint: "Ενεργοποίησε το μόνο σε ΕΝΑ άρθρο — αυτό εμφανίζεται μεγάλο πάνω-πάνω." },
+              { label: "Ετικέτα (π.χ. New)", name: "badge", widget: "string", required: false },
+              { label: "Κατηγορία (εμφάνιση)", name: "category_label", widget: "select", options: ["Pole & Aerial", "Salsa & Bachata", "Events & Festivals", "Health & Wellness", "Studio News"] },
+              { label: "Κατηγορίες φίλτρου", name: "categories", widget: "select", multiple: true, options: ["pole-aerial", "latin", "events", "wellness", "studio"] },
+              { label: "Εικόνα", name: "image", widget: "image" },
+              { label: "Εναλλακτικό κείμενο εικόνας", name: "image_alt", widget: "string", required: false },
+              { label: "Ημερομηνία (εμφάνιση, π.χ. 27 May)", name: "date_label", widget: "string" },
+              { label: "Χρόνος ανάγνωσης (π.χ. 2 min read)", name: "read_time", widget: "string" },
+              { label: "Εξωτερικό link (προαιρετικό — αν το άρθρο ζει σε άλλο site)", name: "link", widget: "string", required: false },
+            ] }
+
+  - name: "blog_el"
+    label: "Blog (Ελληνικά)"
+    files:
+      - name: "articles"
+        label: "Άρθρα"
+        file: "content/blog-el.json"
+        fields:
+          - { label: "Άρθρα", name: "articles", widget: "list", label_singular: "Άρθρο", summary: "{{title}}", fields: [
+              { label: "Τίτλος", name: "title", widget: "string" },
+              { label: "Περιγραφή", name: "description", widget: "text" },
+              { label: "Featured (μεγάλη κάρτα πάνω-πάνω)", name: "featured", widget: "boolean", default: false, hint: "Ενεργοποίησε το μόνο σε ΕΝΑ άρθρο." },
+              { label: "Ετικέτα (π.χ. Νέο)", name: "badge", widget: "string", required: false },
+              { label: "Κατηγορία (εμφάνιση)", name: "category_label", widget: "select", options: ["Pole & Aerial", "Salsa & Bachata", "Events & Festivals", "Υγεία & Ευεξία", "Νέα Studio"] },
+              { label: "Κατηγορίες φίλτρου", name: "categories", widget: "select", multiple: true, options: ["pole-aerial", "latin", "events", "wellness", "studio"] },
+              { label: "Εικόνα", name: "image", widget: "image" },
+              { label: "Εναλλακτικό κείμενο εικόνας", name: "image_alt", widget: "string", required: false },
+              { label: "Ημερομηνία (εμφάνιση, π.χ. 27 Μαΐου)", name: "date_label", widget: "string" },
+              { label: "Χρόνος ανάγνωσης (π.χ. 2 λεπτά ανάγνωση)", name: "read_time", widget: "string" },
+              { label: "Εξωτερικό link (προαιρετικό)", name: "link", widget: "string", required: false },
+            ] }
