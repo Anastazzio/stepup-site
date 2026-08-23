@@ -200,3 +200,34 @@ collections:
                 ] },
               { label: "Εμφάνιση κουμπιού online πληρωμής;", name: "pay_online", widget: "boolean", default: false },
             ] }
+  - name: "about"
+    label: "Σχετικά (σελίδα About)"
+    files:
+      - name: "en"
+        label: "English"
+        file: "content/about-en.json"
+        fields:
+          - { label: "Στατιστικά (ακριβώς 4)", name: "stats", widget: "list", label_singular: "Στατιστικό", summary: "{{num}} — {{label}}", fields: [
+              { label: "Αριθμός / σύμβολο (π.χ. 2011, 15+, 1st, 3)", name: "num", widget: "string" },
+              { label: "Ετικέτα", name: "label", widget: "string" },
+            ] }
+          - { label: "Κείμενο ιστορίας (παράγραφοι σε HTML, π.χ. <p>...</p>)", name: "prose", widget: "text" }
+          - { label: "Απόφθεγμα (quote)", name: "quote", widget: "string" }
+          - { label: "Κάρτες \"Τι μας κάνει διαφορετικούς\" (ακριβώς 6)", name: "cards", widget: "list", label_singular: "Κάρτα", summary: "{{title}}", fields: [
+              { label: "Τίτλος", name: "title", widget: "string" },
+              { label: "Περιγραφή", name: "desc", widget: "text" },
+            ] }
+      - name: "el"
+        label: "Ελληνικά"
+        file: "content/about-el.json"
+        fields:
+          - { label: "Στατιστικά (ακριβώς 4)", name: "stats", widget: "list", label_singular: "Στατιστικό", summary: "{{num}} — {{label}}", fields: [
+              { label: "Αριθμός / σύμβολο (π.χ. 2011, 15+, 1η, 3)", name: "num", widget: "string" },
+              { label: "Ετικέτα", name: "label", widget: "string" },
+            ] }
+          - { label: "Κείμενο ιστορίας (παράγραφοι σε HTML, π.χ. <p>...</p>)", name: "prose", widget: "text" }
+          - { label: "Απόφθεγμα (quote)", name: "quote", widget: "string" }
+          - { label: "Κάρτες \"Τι μας κάνει διαφορετικούς\" (ακριβώς 6)", name: "cards", widget: "list", label_singular: "Κάρτα", summary: "{{title}}", fields: [
+              { label: "Τίτλος", name: "title", widget: "string" },
+              { label: "Περιγραφή", name: "desc", widget: "text" },
+            ] }
