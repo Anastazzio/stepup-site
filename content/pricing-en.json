@@ -1,0 +1,164 @@
+{
+  "discount_notice": {
+    "badge": "%",
+    "title": "Combine more classes and save more",
+    "text": "In addition to the combinations listed below, adding more classes can unlock a larger discount. Contact us and we’ll prepare the most suitable personalised option for your schedule."
+  },
+  "pay_online_url": "https://www.vivapayments.com/web2?ref=8341880038172600",
+  "pay_online_label": "Pay Online",
+  "groups": [
+    {
+      "type": "dropin",
+      "name": "Drop-in classes",
+      "tier_label": "Single class",
+      "lead": "Want to try one class before committing to a monthly package? Advance booking is required.",
+      "sections": [
+        { "label": "", "tag": "", "rows": [
+            { "qty": "•", "name": "Pole Dancing", "note": "", "amount": "13€", "tbd": false },
+            { "qty": "•", "name": "Exotic", "note": "", "amount": "11€", "tbd": false },
+            { "qty": "•", "name": "High Heels", "note": "", "amount": "8€", "tbd": false },
+            { "qty": "•", "name": "Salsa", "note": "", "amount": "10€", "tbd": false },
+            { "qty": "•", "name": "Bachata", "note": "", "amount": "10€", "tbd": false },
+            { "qty": "1+1", "name": "Salsa + Bachata combined", "note": "2-hour consecutive class", "amount": "15€", "tbd": false },
+            { "qty": "•", "name": "Bungee Fitness", "note": "", "amount": "15€", "tbd": false }
+          ] }
+      ],
+      "valid_note": "",
+      "extra_rows": [],
+      "pay_online": false
+    },
+    {
+      "type": "regular",
+      "name": "Pole Dancing",
+      "name_tag": "",
+      "tier_label": "Monthly",
+      "sections": [
+        { "label": "", "tag": "", "rows": [
+            { "qty": "1", "name": "1 Pole / week", "note": "No make-up class", "amount": "40€", "tbd": false },
+            { "qty": "1", "name": "1 Pole / week", "note": "Includes 2 make-up classes", "amount": "50€", "tbd": false },
+            { "qty": "2", "name": "2 Pole / week", "note": "Includes 2 make-up classes", "amount": "70€", "tbd": false },
+            { "qty": "1+1", "name": "Pole + Exotic / week", "note": "Includes 2 make-up classes", "amount": "60€", "tbd": false },
+            { "qty": "10", "name": "Pole Pack", "note": "10 classes within 2 months, flexible booking", "amount": "120€", "tbd": false }
+          ] },
+        { "label": "3-month package", "tag": "", "rows": [
+            { "qty": "1", "name": "1 Pole / week", "note": "", "amount": "109€", "tbd": false },
+            { "qty": "2", "name": "2 Pole / week", "note": "", "amount": "179€", "tbd": false },
+            { "qty": "1+1", "name": "Pole + Exotic / week", "note": "", "amount": "159€", "tbd": false }
+          ] },
+        { "label": "Annual", "tag": "", "rows": [
+            { "qty": "1", "name": "1 Pole / week", "note": "", "amount": "339€", "tbd": false },
+            { "qty": "2", "name": "2 Pole / week", "note": "", "amount": "489€", "tbd": false },
+            { "qty": "1+1", "name": "Pole + Exotic / week", "note": "", "amount": "459€", "tbd": false }
+          ] }
+      ],
+      "valid_note": "* Annual prices apply to purchases made by 15/09/2026.",
+      "extra_rows": [],
+      "pay_online": true
+    },
+    {
+      "type": "regular",
+      "name": "Aerial Dance (Sling & Hoop)",
+      "name_tag": "",
+      "tier_label": "Monthly",
+      "sections": [
+        { "label": "", "tag": "", "rows": [
+            { "qty": "1", "name": "1 Aerial / week", "note": "", "amount": "40€", "tbd": false },
+            { "qty": "2", "name": "2 Aerial / week", "note": "", "amount": "60€", "tbd": false },
+            { "qty": "1+1", "name": "Aerial + Pole / week", "note": "", "amount": "65€", "tbd": false }
+          ] },
+        { "label": "Annual", "tag": "", "rows": [
+            { "qty": "1", "name": "1 Aerial / week", "note": "", "amount": "339€", "tbd": false },
+            { "qty": "2", "name": "2 Aerial / week", "note": "", "amount": "469€", "tbd": false },
+            { "qty": "1+1", "name": "Aerial + Pole / week", "note": "", "amount": "479€", "tbd": false }
+          ] }
+      ],
+      "valid_note": "* Annual prices apply to purchases made by 15/09/2026.",
+      "extra_rows": [
+        { "qty": "1–3", "name": "Aerial Pole", "note": "Private, by appointment", "amount": "Contact us", "tbd": true }
+      ],
+      "pay_online": true
+    },
+    {
+      "type": "regular",
+      "name": "Exotic Dance & Flexibility",
+      "name_tag": "",
+      "tier_label": "Monthly",
+      "sections": [
+        { "label": "", "tag": "", "rows": [
+            { "qty": "1", "name": "1 Exotic / week", "note": "", "amount": "35€", "tbd": false },
+            { "qty": "2", "name": "2 Exotic / week", "note": "", "amount": "55€", "tbd": false },
+            { "qty": "1", "name": "Flexibility, 1 / week", "note": "", "amount": "25€", "tbd": false }
+          ] },
+        { "label": "Combinations", "tag": "Indicative prices", "rows": [
+            { "qty": "1+1", "name": "Pole + Flex / week", "note": "", "amount": "60€", "tbd": false },
+            { "qty": "2+1", "name": "2 Pole + 1 Exotic / week", "note": "", "amount": "85€", "tbd": false }
+          ] }
+      ],
+      "valid_note": "* The two combination prices above are indicative and will be confirmed.",
+      "extra_rows": [],
+      "pay_online": false
+    },
+    {
+      "type": "regular",
+      "name": "Bungee Fitness",
+      "name_tag": "",
+      "tier_label": "Monthly package",
+      "sections": [
+        { "label": "", "tag": "", "rows": [
+            { "qty": "4", "name": "4 classes / 1 month", "note": "", "amount": "50€", "tbd": false }
+          ] }
+      ],
+      "valid_note": "",
+      "extra_rows": [],
+      "pay_online": false
+    },
+    {
+      "type": "regular",
+      "name": "Salsa, Bachata & High Heels",
+      "name_tag": "",
+      "tier_label": "Monthly",
+      "sections": [
+        { "label": "", "tag": "", "rows": [
+            { "qty": "1", "name": "Salsa, 1 / week", "note": "", "amount": "30€", "tbd": false },
+            { "qty": "1", "name": "Bachata, 1 / week", "note": "", "amount": "30€", "tbd": false },
+            { "qty": "1+1", "name": "Salsa + Bachata combined", "note": "", "amount": "45€", "tbd": false },
+            { "qty": "1", "name": "High Heels Commercial", "note": "Standalone", "amount": "30€", "tbd": false },
+            { "qty": "+", "name": "High Heels", "note": "When combined with another class", "amount": "+20€", "tbd": false }
+          ] }
+      ],
+      "valid_note": "",
+      "extra_rows": [
+        { "qty": "•", "name": "Salsa Ladies Style", "note": "", "amount": "Contact us", "tbd": true }
+      ],
+      "pay_online": false
+    },
+    {
+      "type": "regular",
+      "name": "Mama & Baby",
+      "name_tag": "",
+      "tier_label": "New · from October",
+      "sections": [
+        { "label": "", "tag": "", "rows": [
+            { "qty": "•", "name": "Dance & movement with a baby carrier", "note": "Monthly price", "amount": "40€", "tbd": false }
+          ] }
+      ],
+      "valid_note": "For babies from 3 months to 2 years. Medical or midwife approval and a suitable carrier are required. Limited places.",
+      "extra_rows": [],
+      "pay_online": false
+    },
+    {
+      "type": "regular",
+      "name": "Acro Kids",
+      "name_tag": "Price to be confirmed",
+      "tier_label": "New",
+      "sections": [
+        { "label": "", "tag": "", "rows": [
+            { "qty": "•", "name": "Children 6–12 & teens 13–17", "note": "", "amount": "35€", "tbd": false }
+          ] }
+      ],
+      "valid_note": "Aerial Acrobatics for kids, monthly package.",
+      "extra_rows": [],
+      "pay_online": false
+    }
+  ]
+}
