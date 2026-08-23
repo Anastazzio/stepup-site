@@ -1,0 +1,165 @@
+{
+  "gallery": [
+    {
+      "image": "https://static.wixstatic.com/media/03603c_a802381d99d04eb9adc4ddd178c61123~mv2.jpg",
+      "alt": "Pole Dance classes for all levels",
+      "label": "Pole Dancing"
+    },
+    {
+      "image": "https://static.wixstatic.com/media/03603c_ecf6b5638f5d44e5b925ea3305394190~mv2.webp",
+      "alt": "Aerial Hoop (Lyra) at Step Up",
+      "label": "Aerial Dance"
+    },
+    {
+      "image": "/assets/images/classes-bungee-fitness-stepup-thessaloniki.webp",
+      "alt": "Bungee Fitness class at Step Up Dance Studio in Thessaloniki",
+      "label": "Fitness & Bungee"
+    },
+    {
+      "image": "https://static.wixstatic.com/media/03603c_927e289db4bb4e4e9d73c054f4da6460~mv2.jpg",
+      "alt": "Salsa & Bachata classes in Thessaloniki",
+      "label": "Latin & Social"
+    }
+  ],
+  "categories": [
+    {
+      "name": "Pole Dance & Exotic",
+      "subtitle": "Strength, flexibility and confidence on the pole",
+      "cards": [
+        {
+          "title": "Pole Dancing",
+          "description": "Our core Pole Dance class. Build full-body strength and learn skills step by step, with no previous experience required.",
+          "level": "All levels",
+          "badge": "",
+          "image": "",
+          "image_alt": ""
+        },
+        {
+          "title": "Exotic Dance",
+          "description": "Flowing movement, floorwork and personal style set to music. Ideal if you want a more expressive side of pole.",
+          "level": "Beginner – Intermediate",
+          "badge": "",
+          "image": "",
+          "image_alt": ""
+        }
+      ]
+    },
+    {
+      "name": "Aerial Dance",
+      "subtitle": "Sling, Hoop, Pole and the feeling of flight",
+      "cards": [
+        {
+          "title": "Aerial Sling & Aerial Hoop (Lyra)",
+          "description": "Build core and upper-body strength, learn skills on fabric or hoop and explore aerial movement with structured guidance.",
+          "level": "All levels",
+          "badge": "",
+          "image": "",
+          "image_alt": ""
+        },
+        {
+          "title": "Aerial Pole",
+          "description": "Private class by appointment for 1–3 people, combining pole and aerial elements in a more personalised setting.",
+          "level": "Private, 1–3 people",
+          "badge": "New",
+          "image": "",
+          "image_alt": ""
+        }
+      ]
+    },
+    {
+      "name": "Bungee Fitness",
+      "subtitle": "Low-impact aerial fitness",
+      "cards": [
+        {
+          "title": "Bungee Fitness",
+          "description": "A workout using a specialised bungee harness that lets you move dynamically through the air. Available by appointment for 1–5 people, with closed regular groups also possible.",
+          "level": "1–5 people",
+          "badge": "New",
+          "image": "",
+          "image_alt": ""
+        }
+      ]
+    },
+    {
+      "name": "Flexibility",
+      "subtitle": "A foundation for your other classes",
+      "cards": [
+        {
+          "title": "Flexibility",
+          "description": "Focused flexibility training that supports Pole, Aerial and partner dance.",
+          "level": "All levels",
+          "badge": "",
+          "image": "",
+          "image_alt": ""
+        }
+      ]
+    },
+    {
+      "name": "Latin & Social Dance",
+      "subtitle": "Salsa, Bachata and social dancing",
+      "cards": [
+        {
+          "title": "Salsa",
+          "description": "Lively rhythms, partnerwork and Caribbean energy. You do not need to bring a partner to start.",
+          "level": "Beginners",
+          "badge": "",
+          "image": "",
+          "image_alt": ""
+        },
+        {
+          "title": "Bachata",
+          "description": "A slower, more sensual partner dance with emphasis on connection, musicality and body movement.",
+          "level": "Beginners",
+          "badge": "",
+          "image": "",
+          "image_alt": ""
+        },
+        {
+          "title": "Salsa Ladies Style",
+          "description": "A ladies styling team focused on choreography, performances and selected dance festival appearances.",
+          "level": "Ladies team",
+          "badge": "",
+          "image": "",
+          "image_alt": ""
+        }
+      ]
+    },
+    {
+      "name": "High Heels (Commercial)",
+      "subtitle": "Heels choreography with a modern commercial style",
+      "cards": [
+        {
+          "title": "High Heels Commercial",
+          "description": "Heels choreography with contemporary commercial influences, working on balance, posture and confidence.",
+          "level": "All levels",
+          "badge": "",
+          "image": "",
+          "image_alt": ""
+        }
+      ]
+    },
+    {
+      "name": "Family & Kids",
+      "subtitle": "Two new classes for families and younger students",
+      "cards": [
+        {
+          "title": "Mama & Baby",
+          "description": "Dance and movement with a baby carrier for mums and babies from 3 months to 2 years. Medical or midwife approval and a suitable carrier are required.",
+          "level": "Mum & baby",
+          "badge": "New · October",
+          "image": "/assets/images/classes-mama-baby-stepup-thessaloniki.webp",
+          "image_alt": "Mama & Baby dance class with baby carriers at Step Up Dance Studio in Thessaloniki"
+        },
+        {
+          "title": "Acro Kids",
+          "description": "Aerial Acrobatics for children in a safe, guided environment, with two age groups: 6–12 and 13–17.",
+          "level": "Kids & Teens",
+          "badge": "New",
+          "image": "/assets/images/classes-acro-kids-stepup-thessaloniki.webp",
+          "image_alt": "Acro Kids aerial silks class at Step Up Dance Studio in Thessaloniki"
+        }
+      ]
+    }
+  ]
+}
+
