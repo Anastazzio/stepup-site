@@ -1,111 +1,118 @@
 {
   "articles": [
     {
-      "date_label": "27 May",
-      "badge": "New",
-      "image_alt": "Hecate's Tree Aerial Retreat in Samothrace",
-      "featured": true,
-      "category_label": "Events & Festivals",
-      "read_time": "2 min read",
-      "title": "Hecate's Tree, Aerial Retreat in Samothrace",
-      "link": "https://samothraki-ecatestree.netlify.app/",
       "id": "hecates-tree-retreat",
-      "image": "https://static.wixstatic.com/media/03603c_87933903a94244b1b2db20c93145214b~mv2.png",
+      "featured": true,
+      "badge": "New",
       "categories": [
         "events"
       ],
-      "description": "A three-day aerial silks retreat in Samothrace (28–30 August 2026), in collaboration with aerial coach Vera Vasiliadou and Pansion Galini."
+      "category_label": "Events & Festivals",
+      "title": "Hecate's Tree, Aerial Retreat in Samothrace",
+      "description": "A three-day aerial silks retreat in Samothrace (28–30 August 2026), in collaboration with aerial coach Vera Vasiliadou and Pansion Galini.",
+      "body": "",
+      "date_label": "27 May",
+      "read_time": "2 min read",
+      "image": "https://static.wixstatic.com/media/03603c_87933903a94244b1b2db20c93145214b~mv2.png",
+      "image_alt": "Hecate's Tree Aerial Retreat in Samothrace",
+      "link": "https://samothraki-ecatestree.netlify.app/"
     },
     {
-      "date_label": "22 Jan",
-      "image_alt": "Pole Dance Teacher Training in Thessaloniki",
-      "featured": false,
-      "category_label": "Pole & Aerial",
-      "read_time": "3 min read",
-      "title": "Pole Dance Teacher Training in Thessaloniki",
-      "link": "",
       "id": "pole-teacher-training",
-      "image": "https://static.wixstatic.com/media/03603c_b1fc5d66b4724fb6abe3a7447c4eef82~mv2.webp",
+      "featured": false,
       "categories": [
         "pole-aerial",
         "studio"
       ],
-      "description": "What is included in Step Up's intensive three-day Pole Dance instructor training."
+      "category_label": "Pole & Aerial",
+      "title": "Pole Dance Teacher Training in Thessaloniki",
+      "description": "What is included in Step Up's intensive three-day Pole Dance instructor training.",
+      "body": "",
+      "date_label": "22 Jan",
+      "read_time": "3 min read",
+      "image": "https://static.wixstatic.com/media/03603c_b1fc5d66b4724fb6abe3a7447c4eef82~mv2.webp",
+      "image_alt": "Pole Dance Teacher Training in Thessaloniki",
+      "link": ""
     },
     {
-      "date_label": "7 Nov",
-      "image_alt": "Pole Dance in central Thessaloniki",
-      "featured": false,
-      "category_label": "Pole & Aerial",
-      "read_time": "3 min read",
-      "title": "What to know about Pole & Aerial classes in Thessaloniki",
-      "link": "",
       "id": "pole-aerial-classes-guide",
-      "image": "https://static.wixstatic.com/media/03603c_cd074530f47f4fff8673a78faf1de82a~mv2.jpg",
+      "featured": false,
       "categories": [
         "pole-aerial"
       ],
-      "description": "A practical guide to Step Up Pole, Aerial and Latin classes by level and goal."
+      "category_label": "Pole & Aerial",
+      "title": "What to know about Pole & Aerial classes in Thessaloniki",
+      "description": "A practical guide to Step Up Pole, Aerial and Latin classes by level and goal.",
+      "body": "",
+      "date_label": "7 Nov",
+      "read_time": "3 min read",
+      "image": "https://static.wixstatic.com/media/03603c_cd074530f47f4fff8673a78faf1de82a~mv2.jpg",
+      "image_alt": "Pole Dance in central Thessaloniki",
+      "link": ""
     },
     {
-      "date_label": "28 Oct",
-      "image_alt": "Bungee Fitness in Thessaloniki",
-      "featured": false,
-      "category_label": "Health & Wellness",
-      "read_time": "3 min read",
-      "title": "Discover Bungee Fitness",
-      "link": "",
       "id": "discover-bungee-fitness",
-      "image": "https://static.wixstatic.com/media/03603c_a5dbb1d009544b78ac6e4dae03325b3f~mv2.jpg",
+      "featured": false,
       "categories": [
         "wellness"
       ],
-      "description": "What a bungee workout feels like and who it may suit."
+      "category_label": "Health & Wellness",
+      "title": "Discover Bungee Fitness",
+      "description": "What a bungee workout feels like and who it may suit.",
+      "body": "",
+      "date_label": "28 Oct",
+      "read_time": "3 min read",
+      "image": "https://static.wixstatic.com/media/03603c_a5dbb1d009544b78ac6e4dae03325b3f~mv2.jpg",
+      "image_alt": "Bungee Fitness in Thessaloniki",
+      "link": ""
     },
     {
-      "date_label": "9 Apr",
-      "image_alt": "Pole Dance or Aerial Hoop",
-      "featured": false,
-      "category_label": "Pole & Aerial",
-      "read_time": "2 min read",
-      "title": "Pole Dance or Aerial Hoop? What you need to know",
-      "link": "",
       "id": "pole-or-aerial-hoop",
-      "image": "https://static.wixstatic.com/media/03603c_e73849a9704e4a9da14a4116f5417260~mv2.jpg",
+      "featured": false,
       "categories": [
         "pole-aerial"
       ],
-      "description": "Answers to common questions about age, body type and experience before you start."
+      "category_label": "Pole & Aerial",
+      "title": "Pole Dance or Aerial Hoop? What you need to know",
+      "description": "Answers to common questions about age, body type and experience before you start.",
+      "body": "",
+      "date_label": "9 Apr",
+      "read_time": "2 min read",
+      "image": "https://static.wixstatic.com/media/03603c_e73849a9704e4a9da14a4116f5417260~mv2.jpg",
+      "image_alt": "Pole Dance or Aerial Hoop",
+      "link": ""
     },
     {
-      "date_label": "2 Apr",
-      "image_alt": "Bachata New Releases",
-      "featured": false,
-      "category_label": "Salsa & Bachata",
-      "read_time": "2 min read",
-      "title": "Bachata New Releases",
-      "link": "",
       "id": "bachata-new-releases",
-      "image": "https://static.wixstatic.com/media/03603c_07a14216c08f4648b66d0f9219ed1da4~mv2.jpg",
+      "featured": false,
       "categories": [
         "latin"
       ],
-      "description": "Fresh bachata releases for your next playlist."
+      "category_label": "Salsa & Bachata",
+      "title": "Bachata New Releases",
+      "description": "Fresh bachata releases for your next playlist.",
+      "body": "",
+      "date_label": "2 Apr",
+      "read_time": "2 min read",
+      "image": "https://static.wixstatic.com/media/03603c_07a14216c08f4648b66d0f9219ed1da4~mv2.jpg",
+      "image_alt": "Bachata New Releases",
+      "link": ""
     },
     {
-      "date_label": "17 Jan",
-      "image_alt": "Wellbeing through pole dance",
-      "featured": false,
-      "category_label": "Health & Wellness",
-      "read_time": "8 min read",
-      "title": "Wellbeing through pole dance",
-      "link": "",
       "id": "wellbeing-through-pole-dance",
-      "image": "https://static.wixstatic.com/media/03603c_cac17c6e59a943a3ad4db7bc7bd574ef~mv2.jpg",
+      "featured": false,
       "categories": [
         "wellness"
       ],
-      "description": "How pole dance can support body awareness and confidence beyond strength and technique."
+      "category_label": "Health & Wellness",
+      "title": "Wellbeing through pole dance",
+      "description": "How pole dance can support body awareness and confidence beyond strength and technique.",
+      "body": "",
+      "date_label": "17 Jan",
+      "read_time": "8 min read",
+      "image": "https://static.wixstatic.com/media/03603c_cac17c6e59a943a3ad4db7bc7bd574ef~mv2.jpg",
+      "image_alt": "Wellbeing through pole dance",
+      "link": ""
     }
   ]
 }
