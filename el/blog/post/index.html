@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="el">
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Step Up Dance Studio Blog</title>
+  <meta content="Οδηγοί, νέα και ιστορίες για Pole Dance, Aerial, Salsa, Bachata και events από το Step Up Dance Studio." name="description"/>
+  <link href="https://www.stepupdancegr.com/el/blog" rel="canonical"/>
+  <meta content="noindex, follow" name="robots"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700&amp;family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&amp;display=swap" rel="stylesheet"/>
+  <style>
+    :root{
+      --black:#444440;
+      --white:#ffffff;
+      --off-white:#faf9f8;
+      --fuchsia:#d6006c;
+      --fuchsia-light:#ff4fa0;
+      --yellow:#f3c93b;
+      --gray:#6f6f6f;
+      --gray-dark:#b3b3b3;
+    }
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{font-family:'Archivo',sans-serif;font-weight:400;background:var(--white);color:var(--black);line-height:1.65;}
+    h1,h2,h3,h4,.serif{font-family:'Fraunces',serif;font-weight:500;letter-spacing:-0.01em;}
+    a{text-decoration:none;color:inherit;}
+    img{display:block;width:100%;height:100%;object-fit:cover;}
+    .wrap{max-width:760px;margin:0 auto;padding:0 32px;}
+    .wrap-wide{max-width:1160px;margin:0 auto;padding:0 32px;}
+
+    .post-head{padding:52px 0 28px;}
+    .post-back{display:block;font-size:13.5px;font-weight:600;color:var(--fuchsia);margin-bottom:22px;}
+    .post-back:hover{color:var(--fuchsia-light);}
+    .post-cat{display:block;font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--fuchsia);}
+    .post-head h1{font-size:36px;font-weight:500;margin:12px 0 14px;line-height:1.18;}
+    .post-meta{font-size:.86rem;color:var(--gray-dark);}
+    .post-image{margin:30px 0;aspect-ratio:16/9;overflow:hidden;background:var(--off-white);}
+    .post-body{font-size:16.5px;color:#2c2c29;}
+    .post-body p{margin-bottom:20px;}
+    .post-body h2{font-size:24px;margin:34px 0 14px;}
+    .post-body h3{font-size:20px;margin:28px 0 12px;}
+    .post-body a{color:var(--fuchsia);font-weight:600;}
+    .post-body a:hover{color:var(--fuchsia-light);}
+    .post-body ul,.post-body ol{margin:0 0 20px 22px;}
+    .post-body img{margin:14px 0;}
+    .post-not-found{display:none;padding:70px 0;text-align:center;}
+    .post-not-found p{color:var(--gray);margin-bottom:22px;}
+
+    .notice{background:var(--off-white);border:1px solid rgba(10,10,10,.1);padding:18px 26px;margin:0 auto 8px;max-width:900px;display:flex;gap:14px;align-items:flex-start;}
+    .notice .badge{flex-shrink:0;width:30px;height:30px;background:var(--yellow);color:var(--black);display:flex;align-items:center;justify-content:center;font-size:.9rem;font-weight:700;}
+    .notice p{font-size:.88rem;color:var(--gray);margin:0;font-weight:300;}
+
+    section{padding:44px 0;}
+    section.tight{padding-top:0;}
+
+    .cta-band{background:var(--black);color:var(--white);text-align:center;padding:64px 32px;}
+    .cta-band h2{color:var(--white);font-size:28px;margin-bottom:10px;}
+    .cta-band p{color:var(--gray-dark);max-width:520px;margin:0 auto 22px;font-size:15px;font-weight:300;}
+    .btn-primary{background:var(--fuchsia);color:var(--white);padding:15px 32px;font-weight:500;font-size:14.5px;display:inline-block;letter-spacing:.2px;}
+    .btn-primary:hover{background:var(--fuchsia-light);}
+
+    footer{background:var(--black);color:var(--white);padding:70px 0 30px;margin-top:20px;}
+    .footer-wrap{max-width:1180px;margin:0 auto;padding:0 32px;}
+    .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:50px;margin-bottom:50px;}
+    footer h4{font-size:12.5px;letter-spacing:1.5px;text-transform:uppercase;color:var(--yellow);margin-bottom:18px;font-weight:600;}
+    footer p, footer a{font-size:14px;color:var(--gray-dark);font-weight:300;}
+    footer ul{list-style:none;}
+    footer li{margin-bottom:10px;}
+    footer a:hover{color:var(--fuchsia-light);}
+    .socials{display:flex;gap:12px;margin-top:20px;}
+    .socials a{width:34px;height:34px;border:1px solid rgba(255,255,255,0.25);display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--white);}
+    .bottom-bar{text-align:center;padding-top:26px;border-top:1px solid rgba(255,255,255,0.1);font-size:12px;color:var(--gray-dark);}
+
+    @media (max-width:700px){
+      .nav-links{display:none;}
+      .post-head h1{font-size:27px;}
+      .footer-grid{grid-template-columns:1fr;}
+      .cta-band{padding:44px 24px;}
+    }
+    </style>
+    <style id="stepup-production-v1">
+      :root{--black:#3a3a36;--white:#fff;--off-white:#FAFAFA;--fuchsia:#DB00BA;--fuchsia-light:#ee43d2;--yellow:#FDD711;--gray:#636363;--gray-dark:#9b9b96;--surface:#F0F0F0;--border:#DFDFDF;--limeup:#C6FF00}
+      html{scroll-behavior:smooth}body{font-family:'Archivo',sans-serif;color:var(--black);overflow-x:hidden}body.menu-open{overflow:hidden}a,button{-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+      nav.site-nav{min-height:73px;padding:10px 28px;position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);display:flex;align-items:center}.brand-logo{display:flex;align-items:center;flex:0 0 auto}.brand-logo img{width:145px;height:52px;object-fit:contain}.nav-center{display:flex;align-items:center;gap:28px;margin-left:auto;margin-right:24px}.nav-links{display:flex;align-items:center;gap:24px}.nav-links a{font-size:13px;font-weight:600}.nav-links a.active{color:var(--fuchsia)}.nav-tools{display:flex;align-items:center;gap:17px;font-size:11.5px;font-weight:700}.language-switch{display:flex;gap:5px;align-items:center}.language-switch .active{color:var(--fuchsia)}.members-link{white-space:nowrap}.nav-cta{display:inline-flex;align-items:center;justify-content:center;min-height:44px;background:var(--fuchsia);color:#fff;padding:11px 20px;font-weight:700;white-space:nowrap}.menu-toggle{display:none;border:0;background:transparent;width:46px;height:46px;cursor:pointer;position:relative;margin-left:auto}.menu-toggle span{position:absolute;left:10px;width:26px;height:2px;background:var(--black);transition:.25s ease}.menu-toggle span:nth-child(1){top:15px}.menu-toggle span:nth-child(2){top:22px}.menu-toggle span:nth-child(3){top:29px}.menu-toggle[aria-expanded="true"] span:nth-child(1){top:22px;transform:rotate(45deg)}.menu-toggle[aria-expanded="true"] span:nth-child(2){opacity:0}.menu-toggle[aria-expanded="true"] span:nth-child(3){top:22px;transform:rotate(-45deg)}.mobile-menu{display:none;position:fixed;inset:73px 0 0;background:#fff;z-index:99;padding:24px 22px 38px;overflow-y:auto;border-top:1px solid var(--border)}.mobile-menu.open{display:block}.mobile-menu nav{display:block;position:static;padding:0;background:none;border:0}.mobile-links{display:grid}.mobile-links a{padding:16px 2px;border-bottom:1px solid var(--border);font:500 20px/1.25 'Fraunces',serif;min-height:54px;display:flex;align-items:center}.mobile-links a.active{color:var(--fuchsia)}.mobile-utility{display:flex;flex-wrap:wrap;gap:14px 22px;margin-top:24px;font-size:13px;font-weight:700}.mobile-cta{display:flex;min-height:50px;align-items:center;justify-content:center;background:var(--fuchsia);color:#fff;margin-top:26px;font-weight:700}
+      .socials{display:flex;align-items:center;gap:14px;margin-top:16px}.socials a{width:42px;height:42px;border:1px solid rgba(255,255,255,.28);display:inline-flex;align-items:center;justify-content:center;color:#fff;border-radius:50%;transition:.2s ease}.socials a:hover,.socials a:focus-visible{border-color:#fff;background:rgba(255,255,255,.08);transform:translateY(-1px)}.socials svg{width:19px;height:19px;fill:currentColor;display:block}footer .logo img{width:150px;height:auto;object-fit:contain}.bottom-bar{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:4px 8px}.powered-by span{color:rgba(255,255,255,.72)}.powered-by a{color:var(--limeup);font-weight:700;text-decoration:none}.powered-by a:hover{text-decoration:underline;text-underline-offset:3px}
+      @media(max-width:1120px){.nav-tools{display:none}.nav-links{gap:17px}.brand-logo img{width:136px}}@media(max-width:900px){nav.site-nav{padding:10px 16px}.nav-center,.nav-cta{display:none!important}.menu-toggle{display:block}.wrap,.wrap-wide{padding-left:22px!important;padding-right:22px!important}.footer-grid{grid-template-columns:1fr!important}}@media(max-width:560px){.wrap,.wrap-wide{padding-left:18px!important;padding-right:18px!important}.cta-band{padding:48px 18px!important}.cta-band .btn-primary{width:100%;min-height:48px;display:flex;align-items:center;justify-content:center;text-align:center}.bottom-bar{justify-content:flex-start;line-height:1.7}}@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+      </style>
+      <style id="master-global-final">
+        .members-slot[hidden]{display:none!important}
+        @media(min-width:901px) and (max-width:1240px){.nav-links{gap:15px!important}.nav-links a{font-size:12px!important}}
+        </style>
+  </head>
+  <body>
+<nav aria-label="Κύρια πλοήγηση" class="site-nav"><a class="brand-logo" href="/el"><img alt="Step Up Dance Studio" src="/assets/logo-stepup-fuchsia.png"/></a><div class="nav-center"><div class="nav-links"><a href="/el">Αρχική</a><a href="/el/dancestudiothessaloniki">Σχετικά</a><a href="/el/classes">Μαθήματα</a><a href="/el/pricing">Τιμές</a><a href="/el/events">Events</a><a aria-current="page" class="active" href="/el/blog">Blog</a><a href="/el/poledancing-thessaloniki">FAQ</a><a href="/el/contact">Επικοινωνία</a></div><div class="nav-tools"><div class="language-switch"><a class="active" href="#" lang="el">EL</a><span>/</span><a href="/blog" lang="en">EN</a></div><span class="members-slot" data-future-members-url="https://step-up-digital-system.lovable.app/member" hidden=""></span></div></div><a class="nav-cta" href="https://step-up-digital-system.lovable.app/interest" target="_blank" rel="noopener noreferrer">Θέλω να ξεκινήσω</a><button aria-controls="mobile-menu" aria-expanded="false" aria-label="Μενού" class="menu-toggle" type="button"><span></span><span></span><span></span></button></nav><div aria-hidden="true" class="mobile-menu" id="mobile-menu"><nav aria-label="Μενού κινητού"><div class="mobile-links"><a href="/el">Αρχική</a><a href="/el/dancestudiothessaloniki">Σχετικά</a><a href="/el/classes">Μαθήματα</a><a href="/el/pricing">Τιμές</a><a href="/el/events">Events</a><a aria-current="page" class="active" href="/el/blog">Blog</a><a href="/el/poledancing-thessaloniki">FAQ</a><a href="/el/contact">Επικοινωνία</a></div><div class="mobile-utility"><a href="#" lang="el">EL</a><a href="/blog" lang="en">EN</a><span class="members-slot" data-future-members-url="https://step-up-digital-system.lovable.app/member" hidden=""></span><a href="https://step-up-digital-system.lovable.app/install" target="_blank" rel="noopener noreferrer">Install STEP UP App</a></div><a class="mobile-cta" href="https://step-up-digital-system.lovable.app/interest" target="_blank" rel="noopener noreferrer">Θέλω να ξεκινήσω</a></nav></div>
+<main class="wrap">
+<div id="post-not-found" class="post-not-found"></div>
+<article id="post-article">
+<header class="post-head">
+<a class="post-back" href="/el/blog">← Πίσω στο Blog</a>
+<span class="post-cat" id="post-cat"></span>
+<h1 id="post-title"></h1>
+<span class="post-meta" id="post-meta"></span>
+</header>
+<div class="post-image" id="post-image"></div>
+<div class="post-body" id="post-body"></div>
+</article>
+</main>
+<div class="cta-band">
+<h2>Θες να μαθαίνεις πρώτος τα νέα μας;</h2>
+<p>Ακολούθησέ μας στα social media για νέα άρθρα, events και προσφορές.</p>
+<a class="btn-primary" href="https://www.instagram.com/stepupdancegr/" rel="noopener noreferrer" target="_blank">Ακολούθησέ μας στο Instagram</a>
+</div>
+<footer>
+<div class="footer-wrap">
+<div class="footer-grid">
+<div>
+<div class="logo" style="margin-bottom:16px;"><img alt="Step Up Dance Studio" src="/assets/logo-stepup-white.png"/></div>
+<p>Στρατηγού Μπράντουνα 5, 546 26 Θεσσαλονίκη</p>
+<div aria-label="Social media" class="socials"><a aria-label="Instagram" href="https://www.instagram.com/stepupdancegr/" rel="noopener noreferrer" target="_blank"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm5.5-3.3a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4z"></path></svg></a><a aria-label="Facebook" href="https://www.facebook.com/stepupdancegr" rel="noopener noreferrer" target="_blank"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M13.5 22v-8h2.8l.4-3.2h-3.2V8.7c0-.9.3-1.6 1.7-1.6H17V4.2c-.3 0-1.4-.2-2.6-.2-2.6 0-4.4 1.6-4.4 4.5v2.3H7V14h3v8h3.5z"></path></svg></a><a aria-label="TikTok" href="https://www.tiktok.com/@stepupdancegr" rel="noopener noreferrer" target="_blank"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M14.7 2h3.1c.2 1.7 1.2 3.2 2.7 4v3.1c-1.5 0-3-.5-4.2-1.4v7.1A7.2 7.2 0 1 1 10 7.7v3.2a4 4 0 1 0 3.6 4V2h1.1z"></path></svg></a><a aria-label="YouTube" href="https://www.youtube.com/@stepupdancegr" rel="noopener noreferrer" target="_blank"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.5 12 4.5 12 4.5s-7 0-8.9.6A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12a31 31 0 0 0 .6 4.8 3 3 0 0 0 2.1 2.1c1.8.6 8.8.6 8.8.6s7 0 8.9-.6a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8zM9.7 15.4V8.6l6 3.4-6 3.4z"></path></svg></a></div>
+</div>
+<div>
+<h4>Επικοινωνία</h4>
+<ul><li>+30 694 384 3073</li><li>+30 231 402 3591</li><li>stepupdance100@gmail.com</li></ul>
+</div>
+<div>
+<h4>Σύνδεσμοι</h4>
+<ul><li><a href="/el/classes">Μαθήματα &amp; Τιμές</a></li><li><a href="/el/poledancing-thessaloniki">FAQ</a></li><li><a href="/el">Αρχική</a></li></ul>
+</div>
+</div>
+<div class="bottom-bar"><span>© 2026 Step Up Dance Studio</span><span class="powered-by"><span>· Powered by </span><a href="#">LimeUp</a></span></div>
+</div>
+</footer>
+<script>window.STEPUP_BLOG_LANG = "el";</script>
+<script src="https://unpkg.com/marked/marked.min.js" defer></script>
+<script src="/assets/js/blog-post-render.js" defer></script>
+<script>const menuToggle=document.querySelector('.menu-toggle');const mobileMenu=document.getElementById('mobile-menu');if(menuToggle&&mobileMenu){const closeMenu=()=>{menuToggle.setAttribute('aria-expanded','false');mobileMenu.classList.remove('open');mobileMenu.setAttribute('aria-hidden','true');document.body.classList.remove('menu-open')};menuToggle.addEventListener('click',()=>{const open=menuToggle.getAttribute('aria-expanded')==='true';if(open)return closeMenu();menuToggle.setAttribute('aria-expanded','true');mobileMenu.classList.add('open');mobileMenu.setAttribute('aria-hidden','false');document.body.classList.add('menu-open')});mobileMenu.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeMenu));window.addEventListener('keydown',e=>{if(e.key==='Escape')closeMenu()})}</script>
+</body>
+</html>
