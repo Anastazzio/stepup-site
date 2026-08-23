@@ -1,0 +1,164 @@
+{
+  "discount_notice": {
+    "badge": "%",
+    "title": "Όσο περισσότερα μαθήματα συνδυάζεις, τόσο μεγαλύτερη έκπτωση έχεις",
+    "text": "Πέρα από τα συνδυαστικά πακέτα που βλέπεις παρακάτω, όσο πιο πολλά μαθήματα προσθέτεις στο πρόγραμμά σου τόσο μεγαλύτερη είναι η επιπλέον έκπτωση. Για να σου ετοιμάσουμε την πιο συμφέρουσα προσωπική πρόταση, στείλε μας DM ή επικοινώνησε με τη γραμματεία."
+  },
+  "pay_online_url": "https://www.vivapayments.com/web2?ref=8341880038172600",
+  "pay_online_label": "Πλήρωσε Online",
+  "groups": [
+    {
+      "type": "dropin",
+      "name": "Drop-in μαθήματα",
+      "tier_label": "Μεμονωμένη επίσκεψη",
+      "lead": "Θες να δοκιμάσεις πρώτα ένα μάθημα, χωρίς δέσμευση σε μηνιαίο πρόγραμμα; Χρειάζεται προκαταβολικό ραντεβού.",
+      "sections": [
+        { "label": "", "tag": "", "rows": [
+            { "qty": "•", "name": "Pole Dancing", "note": "", "amount": "13€", "tbd": false },
+            { "qty": "•", "name": "Exotic", "note": "", "amount": "11€", "tbd": false },
+            { "qty": "•", "name": "High Heels", "note": "", "amount": "8€", "tbd": false },
+            { "qty": "•", "name": "Salsa", "note": "", "amount": "10€", "tbd": false },
+            { "qty": "•", "name": "Bachata", "note": "", "amount": "10€", "tbd": false },
+            { "qty": "1+1", "name": "Salsa + Bachata μαζί", "note": "Συνεχόμενο 2ωρο", "amount": "15€", "tbd": false },
+            { "qty": "•", "name": "Bungee Fitness", "note": "", "amount": "15€", "tbd": false }
+          ] }
+      ],
+      "valid_note": "",
+      "extra_rows": [],
+      "pay_online": false
+    },
+    {
+      "type": "regular",
+      "name": "Pole Dancing",
+      "name_tag": "",
+      "tier_label": "Μηνιαία",
+      "sections": [
+        { "label": "", "tag": "", "rows": [
+            { "qty": "1", "name": "1 Pole / εβδομάδα", "note": "Χωρίς αναπλήρωση", "amount": "40€", "tbd": false },
+            { "qty": "1", "name": "1 Pole / εβδομάδα", "note": "Με 2 αναπληρώσεις", "amount": "50€", "tbd": false },
+            { "qty": "2", "name": "2 Pole / εβδομάδα", "note": "Με 2 αναπληρώσεις", "amount": "70€", "tbd": false },
+            { "qty": "1+1", "name": "Pole + Exotic / εβδομάδα", "note": "Με 2 αναπληρώσεις", "amount": "60€", "tbd": false },
+            { "qty": "10", "name": "Pole Pack", "note": "10 μαθήματα μέσα σε 2 μήνες, ευέλικτη κράτηση", "amount": "120€", "tbd": false }
+          ] },
+        { "label": "Τρίμηνη (3 μήνες)", "tag": "", "rows": [
+            { "qty": "1", "name": "1 Pole / εβδομάδα", "note": "", "amount": "109€", "tbd": false },
+            { "qty": "2", "name": "2 Pole / εβδομάδα", "note": "", "amount": "179€", "tbd": false },
+            { "qty": "1+1", "name": "Pole + Exotic / εβδομάδα", "note": "", "amount": "159€", "tbd": false }
+          ] },
+        { "label": "Ετήσια", "tag": "", "rows": [
+            { "qty": "1", "name": "1 Pole / εβδομάδα", "note": "", "amount": "339€", "tbd": false },
+            { "qty": "2", "name": "2 Pole / εβδομάδα", "note": "", "amount": "489€", "tbd": false },
+            { "qty": "1+1", "name": "Pole + Exotic / εβδομάδα", "note": "", "amount": "459€", "tbd": false }
+          ] }
+      ],
+      "valid_note": "* Οι ετήσιες τιμές ισχύουν για αγορές έως 15/09/2026.",
+      "extra_rows": [],
+      "pay_online": true
+    },
+    {
+      "type": "regular",
+      "name": "Aerial Dance (Sling & Hoop)",
+      "name_tag": "",
+      "tier_label": "Μηνιαία",
+      "sections": [
+        { "label": "", "tag": "", "rows": [
+            { "qty": "1", "name": "1 Aerial / εβδομάδα", "note": "", "amount": "40€", "tbd": false },
+            { "qty": "2", "name": "2 Aerial / εβδομάδα", "note": "", "amount": "60€", "tbd": false },
+            { "qty": "1+1", "name": "Aerial + Pole / εβδομάδα", "note": "", "amount": "65€", "tbd": false }
+          ] },
+        { "label": "Ετήσια", "tag": "", "rows": [
+            { "qty": "1", "name": "1 Aerial / εβδομάδα", "note": "", "amount": "339€", "tbd": false },
+            { "qty": "2", "name": "2 Aerial / εβδομάδα", "note": "", "amount": "469€", "tbd": false },
+            { "qty": "1+1", "name": "Aerial + Pole / εβδομάδα", "note": "", "amount": "479€", "tbd": false }
+          ] }
+      ],
+      "valid_note": "* Οι ετήσιες τιμές ισχύουν για αγορές έως 15/09/2026.",
+      "extra_rows": [
+        { "qty": "1–3", "name": "Aerial Pole", "note": "Ιδιαίτερο, κατόπιν ραντεβού", "amount": "Κατόπιν επικοινωνίας", "tbd": true }
+      ],
+      "pay_online": true
+    },
+    {
+      "type": "regular",
+      "name": "Exotic Dance & Flexibility",
+      "name_tag": "",
+      "tier_label": "Μηνιαία",
+      "sections": [
+        { "label": "", "tag": "", "rows": [
+            { "qty": "1", "name": "1 Exotic / εβδομάδα", "note": "", "amount": "35€", "tbd": false },
+            { "qty": "2", "name": "2 Exotic / εβδομάδα", "note": "", "amount": "55€", "tbd": false },
+            { "qty": "1", "name": "Flexibility, 1 / εβδομάδα", "note": "", "amount": "25€", "tbd": false }
+          ] },
+        { "label": "Συνδυαστικά", "tag": "Ενδεικτικές τιμές", "rows": [
+            { "qty": "1+1", "name": "Pole + Flex / εβδομάδα", "note": "", "amount": "60€", "tbd": false },
+            { "qty": "2+1", "name": "2 Pole + 1 Exotic / εβδομάδα", "note": "", "amount": "85€", "tbd": false }
+          ] }
+      ],
+      "valid_note": "* Οι δύο παραπάνω συνδυαστικές τιμές είναι ενδεικτικές και θα επιβεβαιωθούν.",
+      "extra_rows": [],
+      "pay_online": false
+    },
+    {
+      "type": "regular",
+      "name": "Bungee Fitness",
+      "name_tag": "",
+      "tier_label": "Μηνιαίο πακέτο",
+      "sections": [
+        { "label": "", "tag": "", "rows": [
+            { "qty": "4", "name": "4 μαθήματα / 1 μήνας", "note": "", "amount": "50€", "tbd": false }
+          ] }
+      ],
+      "valid_note": "",
+      "extra_rows": [],
+      "pay_online": false
+    },
+    {
+      "type": "regular",
+      "name": "Salsa, Bachata & High Heels",
+      "name_tag": "",
+      "tier_label": "Μηνιαία",
+      "sections": [
+        { "label": "", "tag": "", "rows": [
+            { "qty": "1", "name": "Salsa, 1 / εβδομάδα", "note": "", "amount": "30€", "tbd": false },
+            { "qty": "1", "name": "Bachata, 1 / εβδομάδα", "note": "", "amount": "30€", "tbd": false },
+            { "qty": "1+1", "name": "Salsa + Bachata μαζί", "note": "", "amount": "45€", "tbd": false },
+            { "qty": "1", "name": "High Heels Commercial", "note": "Μεμονωμένα", "amount": "30€", "tbd": false },
+            { "qty": "+", "name": "High Heels", "note": "Σε συνδυασμό με άλλο μάθημα", "amount": "+20€", "tbd": false }
+          ] }
+      ],
+      "valid_note": "",
+      "extra_rows": [
+        { "qty": "•", "name": "Salsa Ladies Style", "note": "", "amount": "Κατόπιν επικοινωνίας", "tbd": true }
+      ],
+      "pay_online": false
+    },
+    {
+      "type": "regular",
+      "name": "Mama & Baby",
+      "name_tag": "",
+      "tier_label": "Νέο · από Οκτώβριο",
+      "sections": [
+        { "label": "", "tag": "", "rows": [
+            { "qty": "•", "name": "Χορός & γυμναστική με μάρσιπο", "note": "Μηνιαία τιμή", "amount": "40€", "tbd": false }
+          ] }
+      ],
+      "valid_note": "Για μωρά από 3 μηνών έως 2 ετών. Απαιτείται έγκριση γιατρού ή μαίας και κατάλληλο μάρσιπο. Περιορισμένες θέσεις.",
+      "extra_rows": [],
+      "pay_online": false
+    },
+    {
+      "type": "regular",
+      "name": "Acro Kids",
+      "name_tag": "Τιμή υπό επιβεβαίωση",
+      "tier_label": "Νέο",
+      "sections": [
+        { "label": "", "tag": "", "rows": [
+            { "qty": "•", "name": "Παιδιά 6–12 ετών & έφηβοι 13–17 ετών", "note": "", "amount": "35€", "tbd": false }
+          ] }
+      ],
+      "valid_note": "Aerial Acrobatics for kids, σε μηνιαία βάση.",
+      "extra_rows": [],
+      "pay_online": false
+    }
+  ]
+}
