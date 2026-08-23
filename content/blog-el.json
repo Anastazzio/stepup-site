@@ -4,10 +4,13 @@
       "id": "hecates-tree-retreat",
       "featured": true,
       "badge": "Νέο",
-      "categories": ["events"],
+      "categories": [
+        "events"
+      ],
       "category_label": "Events & Festivals",
       "title": "Hecate's Tree, Aerial Retreat στη Σαμοθράκη",
       "description": "Ένα τριήμερο aerial silks retreat στη Σαμοθράκη (28–30 Αυγούστου 2026), σε συνεργασία με την aerial coach Vera Vasiliadou και την Pansion Galini.",
+      "body": "",
       "date_label": "27 Μαΐου",
       "read_time": "2 λεπτά ανάγνωση",
       "image": "https://static.wixstatic.com/media/03603c_87933903a94244b1b2db20c93145214b~mv2.png",
@@ -17,10 +20,14 @@
     {
       "id": "pole-teacher-training",
       "featured": false,
-      "categories": ["pole-aerial", "studio"],
+      "categories": [
+        "pole-aerial",
+        "studio"
+      ],
       "category_label": "Pole & Aerial",
       "title": "Pole Dance Teacher Training στη Θεσσαλονίκη",
       "description": "Τι περιλαμβάνει το εντατικό τριήμερο πρόγραμμα εκπαίδευσης δασκάλων pole dance στο Step Up.",
+      "body": "",
       "date_label": "22 Ιαν",
       "read_time": "3 λεπτά ανάγνωση",
       "image": "https://static.wixstatic.com/media/03603c_b1fc5d66b4724fb6abe3a7447c4eef82~mv2.webp",
@@ -30,10 +37,13 @@
     {
       "id": "pole-aerial-classes-guide",
       "featured": false,
-      "categories": ["pole-aerial"],
+      "categories": [
+        "pole-aerial"
+      ],
       "category_label": "Pole & Aerial",
       "title": "Όσα πρέπει να ξέρεις για τα μαθήματα Pole & Aerial στη Θεσσαλονίκη",
       "description": "Ένας πλήρης οδηγός για τα τμήματα pole, aerial και latin του Step Up, ανά επίπεδο και στόχο.",
+      "body": "",
       "date_label": "7 Νοε",
       "read_time": "3 λεπτά ανάγνωση",
       "image": "https://static.wixstatic.com/media/03603c_cd074530f47f4fff8673a78faf1de82a~mv2.jpg",
@@ -43,10 +53,13 @@
     {
       "id": "discover-bungee-fitness",
       "featured": false,
-      "categories": ["wellness"],
+      "categories": [
+        "wellness"
+      ],
       "category_label": "Υγεία & Ευεξία",
       "title": "Ανακάλυψε τη χαρά του Bungee Fitness",
       "description": "Πώς είναι η εμπειρία της εκγύμνασης στον αέρα με ζώνη bungee, και σε ποιον ταιριάζει.",
+      "body": "",
       "date_label": "28 Οκτ",
       "read_time": "3 λεπτά ανάγνωση",
       "image": "https://static.wixstatic.com/media/03603c_a5dbb1d009544b78ac6e4dae03325b3f~mv2.jpg",
@@ -56,10 +69,13 @@
     {
       "id": "pole-or-aerial-hoop",
       "featured": false,
-      "categories": ["pole-aerial"],
+      "categories": [
+        "pole-aerial"
+      ],
       "category_label": "Pole & Aerial",
       "title": "Pole Dancing ή Aerial Hoop; Όλα όσα πρέπει να ξέρεις",
       "description": "Απαντήσεις στις πιο συχνές ερωτήσεις για ηλικία, βάρος και εμπειρία πριν ξεκινήσεις.",
+      "body": "",
       "date_label": "9 Απρ",
       "read_time": "2 λεπτά ανάγνωση",
       "image": "https://static.wixstatic.com/media/03603c_e73849a9704e4a9da14a4116f5417260~mv2.jpg",
@@ -69,10 +85,13 @@
     {
       "id": "bachata-new-releases",
       "featured": false,
-      "categories": ["latin"],
+      "categories": [
+        "latin"
+      ],
       "category_label": "Salsa & Bachata",
       "title": "Bachata New Releases",
       "description": "Οι πιο φρέσκες κυκλοφορίες bachata του μήνα, ιδανικές για το επόμενό σου playlist.",
+      "body": "",
       "date_label": "2 Απρ",
       "read_time": "2 λεπτά ανάγνωση",
       "image": "https://static.wixstatic.com/media/03603c_07a14216c08f4648b66d0f9219ed1da4~mv2.jpg",
@@ -82,10 +101,13 @@
     {
       "id": "wellbeing-through-pole-dance",
       "featured": false,
-      "categories": ["wellness"],
+      "categories": [
+        "wellness"
+      ],
       "category_label": "Υγεία & Ευεξία",
       "title": "Η απόλυτη ευεξία μέσω του pole dance",
       "description": "Πώς το pole dance δουλεύει σώμα και ψυχή μαζί, πέρα από τη δύναμη και την τεχνική.",
+      "body": "",
       "date_label": "17 Ιαν",
       "read_time": "8 λεπτά ανάγνωση",
       "image": "https://static.wixstatic.com/media/03603c_cac17c6e59a943a3ad4db7bc7bd574ef~mv2.jpg",
