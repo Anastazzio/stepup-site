@@ -4,6 +4,10 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="/assets/favicon.ico" rel="icon" sizes="any"/>
+<link href="/assets/favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="/assets/favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="/assets/favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
 <title>Σχετικά με το Step Up | Σχολή Χορού Θεσσαλονίκη από το 2011</title>
 <meta content="Γνωρίστε το Step Up Dance Studio στο κέντρο της Θεσσαλονίκης, ενεργό από το 2011 σε Pole Dance, Aerial και Latin χορούς, με δυνατή κοινότητα και εμπειρία σε διεθνή φεστιβάλ." name="description"/>
 <link href="https://www.stepupdancegr.com/el/dancestudiothessaloniki" rel="canonical"/>
@@ -308,6 +312,23 @@
 .members-slot[hidden]{display:none!important}
 @media(min-width:901px) and (max-width:1240px){.nav-links{gap:15px!important}.nav-links a{font-size:12px!important}}
 </style>
+<style id="stepup-app-entry">
+.footer-utility{margin-top:20px;display:flex;gap:16px;flex-wrap:wrap;}
+.footer-utility a{font-size:12.5px;color:#e2e2e2;}
+.footer-utility .install-app-link{font-weight:700;font-size:14px;color:var(--yellow);letter-spacing:.2px;}
+.footer-utility .install-app-link:hover{color:var(--fuchsia-light);}
+.footer-utility .members-link{color:#e2e2e2;}
+.footer-utility .members-link:hover{color:var(--fuchsia-light);}
+.mobile-utility .install-app-link{background:var(--yellow);color:var(--black);padding:9px 14px;border-radius:4px;font-weight:800;display:inline-flex;align-items:center;}
+.mobile-utility .install-app-link:hover{background:var(--fuchsia);color:var(--white);}
+.mobile-topbar{display:none;align-items:center;gap:14px;font-size:12px;font-weight:600;letter-spacing:.04em;}
+.mobile-topbar .language-switch{display:flex;align-items:center;gap:6px;color:var(--gray);}
+.mobile-topbar .language-switch a:hover,.mobile-topbar .language-switch a.active{color:var(--fuchsia);}
+@media(max-width:900px){
+.mobile-topbar{display:flex;margin-left:auto;}
+.menu-toggle{margin-left:0;}
+}
+</style>
 </head>
 <body>
 <nav aria-label="Κύρια πλοήγηση">
@@ -326,10 +347,14 @@
 <a href="/el/contact">Επικοινωνία</a></div>
 <div class="nav-tools">
 <div aria-label="Επιλογή γλώσσας" class="language-switch"><a aria-current="page" class="active" href="/el/dancestudiothessaloniki" lang="el">EL</a><span aria-hidden="true">/</span><a href="/dancestudiothessaloniki" lang="en">EN</a></div>
-<span class="members-slot" data-future-members-url="https://step-up-digital-system.lovable.app/member" hidden=""></span>
+<a class="members-link" href="https://app.stepupdancegr.com/member" target="_blank" rel="noopener noreferrer">Μέλη</a>
 </div>
 </div>
-<a class="nav-cta" href="https://step-up-digital-system.lovable.app/interest" target="_blank" rel="noopener noreferrer">Θέλω να ξεκινήσω</a>
+<div class="mobile-topbar">
+<div aria-label="Επιλογή γλώσσας" class="language-switch"><a aria-current="page" class="active" href="/el/dancestudiothessaloniki" lang="el">EL</a><span aria-hidden="true">/</span><a href="/dancestudiothessaloniki" lang="en">EN</a></div>
+<a class="members-link" href="https://app.stepupdancegr.com/member" target="_blank" rel="noopener noreferrer">Μέλη</a>
+</div>
+<a class="nav-cta" href="https://app.stepupdancegr.com/interest" target="_blank" rel="noopener noreferrer">Θέλω να ξεκινήσω</a>
 <button aria-controls="mobile-menu" aria-expanded="false" aria-label="Μενού" class="menu-toggle" type="button">
 <span></span><span></span><span></span>
 </button>
@@ -345,8 +370,8 @@
 <a href="/el/blog">Blog</a>
 <a href="/el/poledancing-thessaloniki">FAQ</a>
 <a href="/el/contact">Επικοινωνία</a></div>
-<div class="mobile-utility"><a class="active" href="/el/dancestudiothessaloniki" lang="el">EL</a><a href="/dancestudiothessaloniki" lang="en">EN</a><span class="members-slot" data-future-members-url="https://step-up-digital-system.lovable.app/member" hidden=""></span><a href="https://step-up-digital-system.lovable.app/install" target="_blank" rel="noopener noreferrer">Install STEP UP App</a></div>
-<a class="mobile-cta" href="https://step-up-digital-system.lovable.app/interest" target="_blank" rel="noopener noreferrer">Θέλω να ξεκινήσω</a>
+<div class="mobile-utility"><a class="active" href="/el/dancestudiothessaloniki" lang="el">EL</a><a href="/dancestudiothessaloniki" lang="en">EN</a><a class="members-link" href="https://app.stepupdancegr.com/member" target="_blank" rel="noopener noreferrer">Μέλη</a><a class="install-app-link" href="https://app.stepupdancegr.com/install" target="_blank" rel="noopener noreferrer">Install STEP UP App</a></div>
+<a class="mobile-cta" href="https://app.stepupdancegr.com/interest" target="_blank" rel="noopener noreferrer">Θέλω να ξεκινήσω</a>
 </nav>
 </div>
 <header class="page-head wrap">
@@ -391,7 +416,7 @@
 <div class="footer-grid">
 <div>
 <div class="logo" style="margin-bottom:16px;"><img alt="Step Up Dance Studio" src="/assets/logo-stepup-white.png"/></div>
-<p>Στρατηγού Μπράντουνα 5, 54626 Θεσσαλονίκη</p>
+<p>Στρατηγού Μπραντούνα 5, 54626 Θεσσαλονίκη</p>
 <div aria-label="Social media" class="socials">
 <a aria-label="Instagram" href="https://www.instagram.com/stepupdancegr/" rel="noopener noreferrer" target="_blank">
 <svg aria-hidden="true" viewbox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm5.5-3.3a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4z"></path></svg>
@@ -406,6 +431,10 @@
 <svg aria-hidden="true" viewbox="0 0 24 24"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.5 12 4.5 12 4.5s-7 0-8.9.6A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12a31 31 0 0 0 .6 4.8 3 3 0 0 0 2.1 2.1c1.8.6 8.8.6 8.8.6s7 0 8.9-.6a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8zM9.7 15.4V8.6l6 3.4-6 3.4z"></path></svg>
 </a>
 </div>
+</div>
+<div class="footer-utility">
+<a class="members-link" href="https://app.stepupdancegr.com/member" target="_blank" rel="noopener noreferrer">Είσοδος μελών</a>
+<a class="install-app-link" href="https://app.stepupdancegr.com/install" target="_blank" rel="noopener noreferrer">Εγκατάσταση STEP UP App</a>
 </div>
 <div>
 <h4>Επικοινωνία</h4>
