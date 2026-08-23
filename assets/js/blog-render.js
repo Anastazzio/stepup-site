@@ -32,6 +32,14 @@
       render([]);
     });
 
+  function postUrl(article) {
+    // Articles that live on another site keep their external "link".
+    // Everything else opens its own page on this site (/blog/post/?id=...).
+    if (article.link) return article.link;
+    var base = lang === "el" ? "/el/blog/post/" : "/blog/post/";
+    return base + "?id=" + encodeURIComponent(article.id || "");
+  }
+
   function el(tag, cls, text) {
     var node = document.createElement(tag);
     if (cls) node.className = cls;
@@ -52,15 +60,13 @@
     }
 
     if (featured) {
-      var wrap = document.createElement(featured.link ? "a" : "div");
+      var wrap = document.createElement("a");
       wrap.className = "featured";
       wrap.setAttribute("data-cat", (featured.categories || []).join(" "));
-      if (featured.link) {
-        wrap.href = featured.link;
-        if (/^https?:\/\//.test(featured.link)) {
-          wrap.target = "_blank";
-          wrap.rel = "noopener noreferrer";
-        }
+      wrap.href = postUrl(featured);
+      if (featured.link && /^https?:\/\//.test(featured.link)) {
+        wrap.target = "_blank";
+        wrap.rel = "noopener noreferrer";
       }
 
       var fImg = el("div", "f-img");
@@ -90,16 +96,14 @@
 
     var grid = el("div", "article-grid");
     rest.forEach(function (a) {
-      var card = a.link ? document.createElement("a") : document.createElement("div");
+      var card = document.createElement("a");
       card.className = "article-card";
       card.setAttribute("data-cat", (a.categories || []).join(" "));
-      if (a.link) {
-        card.href = a.link;
-        card.style.display = "block";
-        if (/^https?:\/\//.test(a.link)) {
-          card.target = "_blank";
-          card.rel = "noopener noreferrer";
-        }
+      card.href = postUrl(a);
+      card.style.display = "block";
+      if (a.link && /^https?:\/\//.test(a.link)) {
+        card.target = "_blank";
+        card.rel = "noopener noreferrer";
       }
 
       var aImg = el("div", "a-img");
