@@ -1,0 +1,18 @@
+{
+  "stats": [
+    { "num": "2011", "label": "Founded" },
+    { "num": "15+", "label": "years in Thessaloniki" },
+    { "num": "1st", "label": "school to host Zumba Training in Greece" },
+    { "num": "3", "label": "international dance festivals co-produced" }
+  ],
+  "prose": "<p>Step Up Dance Studio opened in central Thessaloniki in 2011. We hosted the first Zumba Training in Greece and were among the first schools in Northern Greece to offer Pole Dance classes, when the discipline was still relatively unknown locally. Many students from those early years now teach Pole Dance across Greece, from Crete to Alexandroupoli.</p>\n<p>Latin dance has been part of Step Up from the beginning. We have taught defined Salsa styles, including L.A. On1 and New York On2, continuously since 2011, working over the years with leading international instructors who have taught in our studio.</p>\n<p>Beyond regular classes, Step Up Dance Studio co-produces three established international dance festivals in Greece: <strong>Greek Salsa Bootcamp</strong>, <strong>Ski &amp; Salsa Weekend</strong> and <strong>Sensualonica Dance Festival</strong>.</p>",
+  "quote": "“Dance can also be therapy.”",
+  "cards": [
+    { "title": "Students are part of the community", "desc": "We do not treat students as transactions. We created a space where you can feel part of the community from your first class." },
+    { "title": "Passion, not competition", "desc": "We focus on love for dance, progress, passion and respect rather than making competition the centre of the experience." },
+    { "title": "Dance pioneers in Thessaloniki", "desc": "First Zumba Training in Greece, among the first Pole Dance schools in Northern Greece, and continuous teaching of specific Salsa styles since 2011." },
+    { "title": "Students who became instructors", "desc": "Several of our early Pole Dance students now teach in studios across Greece." },
+    { "title": "Co-producers of major festivals", "desc": "Greek Salsa Bootcamp, Ski &amp; Salsa Weekend and Sensualonica Dance Festival, three established dance events in Greece." },
+    { "title": "Dance and wellbeing", "desc": "We believe dance develops more than strength and technique. It also builds confidence, connection and a better mood." }
+  ]
+}
