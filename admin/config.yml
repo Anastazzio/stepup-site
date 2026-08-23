@@ -120,3 +120,83 @@ collections:
                   { label: "Alt text εικόνας", name: "image_alt", widget: "string", required: false },
                 ] },
             ] }
+
+  - name: "pricing"
+    label: "Τιμές (σελίδα Pricing)"
+    files:
+      - name: "en"
+        label: "English"
+        file: "content/pricing-en.json"
+        fields:
+          - { label: "Ανακοίνωση εκπτώσεων (πάνω από τα πακέτα)", name: "discount_notice", widget: "object", fields: [
+              { label: "Badge (1 σύμβολο/γράμμα)", name: "badge", widget: "string" },
+              { label: "Τίτλος", name: "title", widget: "string" },
+              { label: "Κείμενο", name: "text", widget: "text" },
+            ] }
+          - { label: "Σύνδεσμος online πληρωμής", name: "pay_online_url", widget: "string" }
+          - { label: "Κείμενο κουμπιού online πληρωμής", name: "pay_online_label", widget: "string" }
+          - { label: "Ομάδες τιμών", name: "groups", widget: "list", label_singular: "Ομάδα", summary: "{{name}}", fields: [
+              { label: "Τύπος", name: "type", widget: "select", options: [{ label: "Κανονικό πλαίσιο τιμών (price-block)", value: "regular" }, { label: "Drop-in πλαίσιο (σκούρο)", value: "dropin" }], default: "regular" },
+              { label: "Όνομα μαθήματος / ομάδας", name: "name", widget: "string" },
+              { label: "Ετικέτα δίπλα στο όνομα (π.χ. Price to be confirmed)", name: "name_tag", widget: "string", required: false },
+              { label: "Tier label (π.χ. Monthly, Annual, Single class)", name: "tier_label", widget: "string" },
+              { label: "Εισαγωγικό κείμενο (μόνο για Drop-in)", name: "lead", widget: "text", required: false },
+              { label: "Ενότητες τιμών", name: "sections", widget: "list", label_singular: "Ενότητα", summary: "{{label}}", fields: [
+                  { label: "Ετικέτα ενότητας (κενό = καμία, χρησιμοποιεί το tier label από πάνω)", name: "label", widget: "string", required: false },
+                  { label: "Ετικέτα δίπλα στην ενότητα (π.χ. Indicative prices)", name: "tag", widget: "string", required: false },
+                  { label: "Γραμμές τιμών", name: "rows", widget: "list", label_singular: "Γραμμή", summary: "{{name}} — {{amount}}", fields: [
+                      { label: "Ποσότητα / σύμβολο (π.χ. 1, 2, 1+1, •)", name: "qty", widget: "string" },
+                      { label: "Όνομα", name: "name", widget: "string" },
+                      { label: "Υποσημείωση (μικρό κείμενο κάτω από το όνομα)", name: "note", widget: "string", required: false },
+                      { label: "Ποσό (π.χ. 40€ ή Contact us)", name: "amount", widget: "string" },
+                      { label: "Τιμή προς επιβεβαίωση (TBC/TBD στυλ);", name: "tbd", widget: "boolean", default: false },
+                    ] },
+                ] },
+              { label: "Σημείωση ισχύος (κάτω από τις τιμές)", name: "valid_note", widget: "text", required: false },
+              { label: "Επιπλέον γραμμές (μετά τη σημείωση ισχύος)", name: "extra_rows", widget: "list", label_singular: "Γραμμή", required: false, summary: "{{name}} — {{amount}}", fields: [
+                  { label: "Ποσότητα / σύμβολο", name: "qty", widget: "string" },
+                  { label: "Όνομα", name: "name", widget: "string" },
+                  { label: "Υποσημείωση", name: "note", widget: "string", required: false },
+                  { label: "Ποσό", name: "amount", widget: "string" },
+                  { label: "Τιμή προς επιβεβαίωση (TBC/TBD στυλ);", name: "tbd", widget: "boolean", default: false },
+                ] },
+              { label: "Εμφάνιση κουμπιού online πληρωμής;", name: "pay_online", widget: "boolean", default: false },
+            ] }
+      - name: "el"
+        label: "Ελληνικά"
+        file: "content/pricing-el.json"
+        fields:
+          - { label: "Ανακοίνωση εκπτώσεων (πάνω από τα πακέτα)", name: "discount_notice", widget: "object", fields: [
+              { label: "Badge (1 σύμβολο/γράμμα)", name: "badge", widget: "string" },
+              { label: "Τίτλος", name: "title", widget: "string" },
+              { label: "Κείμενο", name: "text", widget: "text" },
+            ] }
+          - { label: "Σύνδεσμος online πληρωμής", name: "pay_online_url", widget: "string" }
+          - { label: "Κείμενο κουμπιού online πληρωμής", name: "pay_online_label", widget: "string" }
+          - { label: "Ομάδες τιμών", name: "groups", widget: "list", label_singular: "Ομάδα", summary: "{{name}}", fields: [
+              { label: "Τύπος", name: "type", widget: "select", options: [{ label: "Κανονικό πλαίσιο τιμών (price-block)", value: "regular" }, { label: "Drop-in πλαίσιο (σκούρο)", value: "dropin" }], default: "regular" },
+              { label: "Όνομα μαθήματος / ομάδας", name: "name", widget: "string" },
+              { label: "Ετικέτα δίπλα στο όνομα (π.χ. Τιμή υπό επιβεβαίωση)", name: "name_tag", widget: "string", required: false },
+              { label: "Tier label (π.χ. Μηνιαία, Ετήσια, Μεμονωμένη επίσκεψη)", name: "tier_label", widget: "string" },
+              { label: "Εισαγωγικό κείμενο (μόνο για Drop-in)", name: "lead", widget: "text", required: false },
+              { label: "Ενότητες τιμών", name: "sections", widget: "list", label_singular: "Ενότητα", summary: "{{label}}", fields: [
+                  { label: "Ετικέτα ενότητας (κενό = καμία, χρησιμοποιεί το tier label από πάνω)", name: "label", widget: "string", required: false },
+                  { label: "Ετικέτα δίπλα στην ενότητα (π.χ. Ενδεικτικές τιμές)", name: "tag", widget: "string", required: false },
+                  { label: "Γραμμές τιμών", name: "rows", widget: "list", label_singular: "Γραμμή", summary: "{{name}} — {{amount}}", fields: [
+                      { label: "Ποσότητα / σύμβολο (π.χ. 1, 2, 1+1, •)", name: "qty", widget: "string" },
+                      { label: "Όνομα", name: "name", widget: "string" },
+                      { label: "Υποσημείωση (μικρό κείμενο κάτω από το όνομα)", name: "note", widget: "string", required: false },
+                      { label: "Ποσό (π.χ. 40€ ή Κατόπιν επικοινωνίας)", name: "amount", widget: "string" },
+                      { label: "Τιμή προς επιβεβαίωση (TBC/TBD στυλ);", name: "tbd", widget: "boolean", default: false },
+                    ] },
+                ] },
+              { label: "Σημείωση ισχύος (κάτω από τις τιμές)", name: "valid_note", widget: "text", required: false },
+              { label: "Επιπλέον γραμμές (μετά τη σημείωση ισχύος)", name: "extra_rows", widget: "list", label_singular: "Γραμμή", required: false, summary: "{{name}} — {{amount}}", fields: [
+                  { label: "Ποσότητα / σύμβολο", name: "qty", widget: "string" },
+                  { label: "Όνομα", name: "name", widget: "string" },
+                  { label: "Υποσημείωση", name: "note", widget: "string", required: false },
+                  { label: "Ποσό", name: "amount", widget: "string" },
+                  { label: "Τιμή προς επιβεβαίωση (TBC/TBD στυλ);", name: "tbd", widget: "boolean", default: false },
+                ] },
+              { label: "Εμφάνιση κουμπιού online πληρωμής;", name: "pay_online", widget: "boolean", default: false },
+            ] }
