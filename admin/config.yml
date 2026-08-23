@@ -57,3 +57,66 @@ collections:
               { label: "Εξωτερικό link (προαιρετικό)", name: "link", widget: "string", required: false, hint: "Συμπλήρωσέ το ΜΟΝΟ αν το άρθρο ζει ήδη σε άλλο site. Αν το αφήσεις κενό, το άρθρο θα ανοίγει σε δική του σελίδα μέσα στο site μας." },
             ] }
 
+  - name: "site_notice"
+    label: "Ανακοίνωση (κοινή σε Classes & Pricing)"
+    files:
+      - name: "en"
+        label: "English"
+        file: "content/site-notice-en.json"
+        fields:
+          - { label: "Badge (1 σύμβολο/γράμμα)", name: "badge", widget: "string" }
+          - { label: "Τίτλος", name: "title", widget: "string" }
+          - { label: "Παράγραφοι", name: "paragraphs", widget: "list", label_singular: "Παράγραφος", field: { label: "Κείμενο", name: "paragraph", widget: "text" } }
+      - name: "el"
+        label: "Ελληνικά"
+        file: "content/site-notice-el.json"
+        fields:
+          - { label: "Badge (1 σύμβολο/γράμμα)", name: "badge", widget: "string" }
+          - { label: "Τίτλος", name: "title", widget: "string" }
+          - { label: "Παράγραφοι", name: "paragraphs", widget: "list", label_singular: "Παράγραφος", field: { label: "Κείμενο", name: "paragraph", widget: "text" } }
+
+  - name: "classes"
+    label: "Μαθήματα (σελίδα Classes)"
+    files:
+      - name: "en"
+        label: "English"
+        file: "content/classes-en.json"
+        fields:
+          - { label: "Gallery (4 φωτογραφίες πάνω-πάνω)", name: "gallery", widget: "list", label_singular: "Φωτογραφία", summary: "{{label}}", fields: [
+              { label: "Εικόνα", name: "image", widget: "image" },
+              { label: "Alt text", name: "alt", widget: "string" },
+              { label: "Ετικέτα", name: "label", widget: "string" },
+            ] }
+          - { label: "Κατηγορίες μαθημάτων", name: "categories", widget: "list", label_singular: "Κατηγορία", summary: "{{name}}", fields: [
+              { label: "Όνομα κατηγορίας", name: "name", widget: "string" },
+              { label: "Υπότιτλος", name: "subtitle", widget: "string" },
+              { label: "Μαθήματα", name: "cards", widget: "list", label_singular: "Μάθημα", summary: "{{title}}", fields: [
+                  { label: "Τίτλος μαθήματος", name: "title", widget: "string" },
+                  { label: "Περιγραφή", name: "description", widget: "text" },
+                  { label: "Επίπεδο / πλαίσιο", name: "level", widget: "string" },
+                  { label: "Ετικέτα (π.χ. New)", name: "badge", widget: "string", required: false },
+                  { label: "Εικόνα (προαιρετική)", name: "image", widget: "image", required: false },
+                  { label: "Alt text εικόνας", name: "image_alt", widget: "string", required: false },
+                ] },
+            ] }
+      - name: "el"
+        label: "Ελληνικά"
+        file: "content/classes-el.json"
+        fields:
+          - { label: "Gallery (4 φωτογραφίες πάνω-πάνω)", name: "gallery", widget: "list", label_singular: "Φωτογραφία", summary: "{{label}}", fields: [
+              { label: "Εικόνα", name: "image", widget: "image" },
+              { label: "Alt text", name: "alt", widget: "string" },
+              { label: "Ετικέτα", name: "label", widget: "string" },
+            ] }
+          - { label: "Κατηγορίες μαθημάτων", name: "categories", widget: "list", label_singular: "Κατηγορία", summary: "{{name}}", fields: [
+              { label: "Όνομα κατηγορίας", name: "name", widget: "string" },
+              { label: "Υπότιτλος", name: "subtitle", widget: "string" },
+              { label: "Μαθήματα", name: "cards", widget: "list", label_singular: "Μάθημα", summary: "{{title}}", fields: [
+                  { label: "Τίτλος μαθήματος", name: "title", widget: "string" },
+                  { label: "Περιγραφή", name: "description", widget: "text" },
+                  { label: "Επίπεδο / πλαίσιο", name: "level", widget: "string" },
+                  { label: "Ετικέτα (π.χ. Νέο)", name: "badge", widget: "string", required: false },
+                  { label: "Εικόνα (προαιρετική)", name: "image", widget: "image", required: false },
+                  { label: "Alt text εικόνας", name: "image_alt", widget: "string", required: false },
+                ] },
+            ] }
