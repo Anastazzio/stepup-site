@@ -21,6 +21,8 @@
     .then(function (data) {
       renderDiscountNotice(data.discount_notice || {});
       renderGroups(Array.isArray(data.groups) ? data.groups : [], data);
+      renderPayOnline("pricing-pay-top", data);
+      renderPayOnline("pricing-pay-bottom", data);
     })
     .catch(function () {
       /* leave whatever static markup (if any) was already in the page */
@@ -137,16 +139,22 @@
       block.appendChild(renderRow(row));
     });
 
-    if (group.pay_online && data.pay_online_url) {
-      var a = document.createElement("a");
-      a.className = "online-pay";
-      a.href = data.pay_online_url;
-      a.target = "_blank";
-      a.rel = "noopener noreferrer";
-      a.textContent = data.pay_online_label || "Pay Online";
-      block.appendChild(a);
-    }
-
     return block;
+  }
+
+  /* Two fixed "Pay Online" entry points (top, near the page header, and
+     bottom, right after the last price block) replace the old per-group
+     buttons that used to appear scattered mid-page. */
+  function renderPayOnline(hostId, data) {
+    var host = document.getElementById(hostId);
+    if (!host || !data.pay_online_url) return;
+    host.innerHTML = "";
+    var a = document.createElement("a");
+    a.className = "online-pay";
+    a.href = data.pay_online_url;
+    a.target = "_blank";
+    a.rel = "noopener noreferrer";
+    a.textContent = data.pay_online_label || "Pay Online";
+    host.appendChild(a);
   }
 })();
