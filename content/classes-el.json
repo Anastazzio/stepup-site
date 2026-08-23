@@ -1,0 +1,165 @@
+{
+  "gallery": [
+    {
+      "image": "https://static.wixstatic.com/media/03603c_a802381d99d04eb9adc4ddd178c61123~mv2.jpg",
+      "alt": "Pole Dancing μαθήματα για όλα τα επίπεδα",
+      "label": "Pole Dancing"
+    },
+    {
+      "image": "https://static.wixstatic.com/media/03603c_ecf6b5638f5d44e5b925ea3305394190~mv2.webp",
+      "alt": "Aerial Hoop (Lyra) στο Step Up",
+      "label": "Aerial Dance"
+    },
+    {
+      "image": "/assets/images/classes-bungee-fitness-stepup-thessaloniki.webp",
+      "alt": "Μάθημα Bungee Fitness στο Step Up Dance Studio στη Θεσσαλονίκη",
+      "label": "Fitness & Bungee"
+    },
+    {
+      "image": "https://static.wixstatic.com/media/03603c_927e289db4bb4e4e9d73c054f4da6460~mv2.jpg",
+      "alt": "Μαθήματα Salsa & Bachata στη Θεσσαλονίκη",
+      "label": "Latin & Social"
+    }
+  ],
+  "categories": [
+    {
+      "name": "Pole Dance & Exotic",
+      "subtitle": "Δύναμη, ευλυγισία και αυτοπεποίθηση πάνω στη μπάρα",
+      "cards": [
+        {
+          "title": "Pole Dancing",
+          "description": "Το βασικό μας μάθημα pole. Δουλεύεις όλο το σώμα, χτίζεις δύναμη και μαθαίνεις φιγούρες βήμα βήμα, χωρίς προηγούμενη εμπειρία.",
+          "level": "Όλα τα επίπεδα",
+          "badge": "",
+          "image": "",
+          "image_alt": ""
+        },
+        {
+          "title": "Exotic Dance",
+          "description": "Ρέουσες κινήσεις, δουλειά στο πάτωμα και προσωπικό στυλ πάνω στη μουσική. Ιδανικό αν θέλεις να βγάλεις τον χορευτή που κρύβεις μέσα σου.",
+          "level": "Αρχάριοι – Μεσαίοι",
+          "badge": "",
+          "image": "",
+          "image_alt": ""
+        }
+      ]
+    },
+    {
+      "name": "Aerial Dance",
+      "subtitle": "Sling, Hoop, Pole και η αίσθηση της πτήσης",
+      "cards": [
+        {
+          "title": "Aerial Sling & Aerial Hoop (Lyra)",
+          "description": "Χτίζεις δύναμη κορμού και άνω σώματος, μαθαίνεις φιγούρες πάνω στο ύφασμα ή στον κρίκο και εξερευνάς τον εναέριο χορό με ασφάλεια.",
+          "level": "Όλα τα επίπεδα",
+          "badge": "",
+          "image": "",
+          "image_alt": ""
+        },
+        {
+          "title": "Aerial Pole",
+          "description": "Ιδιαίτερο μάθημα κατόπιν ραντεβού, για 1 έως 3 άτομα. Συνδυάζει pole και εναέρια στοιχεία σε πιο εξατομικευμένο πλαίσιο.",
+          "level": "Ιδιαίτερο, 1–3 άτομα",
+          "badge": "Νέο",
+          "image": "",
+          "image_alt": ""
+        }
+      ]
+    },
+    {
+      "name": "Bungee Fitness",
+      "subtitle": "Προπόνηση χωρίς επιβάρυνση στις αρθρώσεις",
+      "cards": [
+        {
+          "title": "Bungee Fitness",
+          "description": "Προπόνηση με ειδική ζώνη bungee που σε αφήνει να κινείσαι ελεύθερα στον αέρα. Γίνεται κατόπιν ραντεβού, για 1 έως 5 άτομα, με δυνατότητα και κλειστών, σταθερών τμημάτων.",
+          "level": "1–5 άτομα",
+          "badge": "Νέο",
+          "image": "",
+          "image_alt": ""
+        }
+      ]
+    },
+    {
+      "name": "Flexibility",
+      "subtitle": "Η βάση για όλα τα υπόλοιπα μαθήματα",
+      "cards": [
+        {
+          "title": "Flexibility",
+          "description": "Στοχευμένη δουλειά ευλυγισίας που στηρίζει όλα τα άλλα μαθήματά μας, από pole και aerial μέχρι χορούς σε ζευγάρι.",
+          "level": "Όλα τα επίπεδα",
+          "badge": "",
+          "image": "",
+          "image_alt": ""
+        }
+      ]
+    },
+    {
+      "name": "Latin & Social Dance",
+      "subtitle": "Salsa, Bachata και χορευτική παρέα",
+      "cards": [
+        {
+          "title": "Salsa",
+          "description": "Ζωντανοί ρυθμοί, φιγούρες σε ζευγάρι και η ενέργεια της Καραϊβικής. Δεν χρειάζεται ζευγάρι για να ξεκινήσεις.",
+          "level": "Αρχάριοι",
+          "badge": "",
+          "image": "",
+          "image_alt": ""
+        },
+        {
+          "title": "Bachata",
+          "description": "Πιο αργή, πιο αισθαντική, με έμφαση στη σύνδεση με τον χορευτικό σου σύντροφο και στην κίνηση της λεκάνης.",
+          "level": "Αρχάριοι",
+          "badge": "",
+          "image": "",
+          "image_alt": ""
+        },
+        {
+          "title": "Salsa Ladies Style",
+          "description": "Γυναικεία ομάδα με styling, φτιαγμένη για χορογραφίες, επιδείξεις και συμμετοχή σε χορευτικά φεστιβάλ.",
+          "level": "Γυναικεία ομάδα",
+          "badge": "",
+          "image": "",
+          "image_alt": ""
+        }
+      ]
+    },
+    {
+      "name": "High Heels (Commercial)",
+      "subtitle": "Χορογραφίες σε τακούνι με σύγχρονο στυλ",
+      "cards": [
+        {
+          "title": "High Heels Commercial",
+          "description": "Χορογραφίες σε τακούνι, με στοιχεία από σύγχρονο commercial στυλ. Δουλεύεις ισορροπία, στάση και σιγουριά.",
+          "level": "Όλα τα επίπεδα",
+          "badge": "",
+          "image": "",
+          "image_alt": ""
+        }
+      ]
+    },
+    {
+      "name": "Οικογένεια & Παιδιά",
+      "subtitle": "Δύο νέα μαθήματα για μικρούς και μεγάλους",
+      "cards": [
+        {
+          "title": "Mama & Baby",
+          "description": "Χορός και γυμναστική με μάρσιπο για μαμάδες και μωρά από 3 μηνών έως 2 ετών. Απαιτείται έγκριση γιατρού ή μαίας και κατάλληλο μάρσιπο.",
+          "level": "Μαμά & μωρό",
+          "badge": "Νέο · Οκτώβριος",
+          "image": "/assets/images/classes-mama-baby-stepup-thessaloniki.webp",
+          "image_alt": "Μάθημα Mama & Baby με μάρσιπο στο Step Up Dance Studio στη Θεσσαλονίκη"
+        },
+        {
+          "title": "Acro Kids",
+          "description": "Aerial Acrobatics για παιδιά, σε ασφαλές και καθοδηγούμενο πλαίσιο. Δύο ηλικιακές ομάδες, 6–12 ετών και 13–17 ετών.",
+          "level": "Παιδιά & Έφηβοι",
+          "badge": "Νέο",
+          "image": "/assets/images/classes-acro-kids-stepup-thessaloniki.webp",
+          "image_alt": "Μάθημα Acro Kids με εναέρια πανιά στο Step Up Dance Studio στη Θεσσαλονίκη"
+        }
+      ]
+    }
+  ]
+}
+
