@@ -89,12 +89,12 @@
             { "qty": "2", "name": "2 Exotic / εβδομάδα", "note": "", "amount": "55€", "tbd": false },
             { "qty": "1", "name": "Flexibility, 1 / εβδομάδα", "note": "", "amount": "25€", "tbd": false }
           ] },
-        { "label": "Συνδυαστικά", "tag": "Ενδεικτικές τιμές", "rows": [
+        { "label": "Συνδυαστικά", "tag": "", "rows": [
             { "qty": "1+1", "name": "Pole + Flex / εβδομάδα", "note": "", "amount": "60€", "tbd": false },
             { "qty": "2+1", "name": "2 Pole + 1 Exotic / εβδομάδα", "note": "", "amount": "85€", "tbd": false }
           ] }
       ],
-      "valid_note": "* Οι δύο παραπάνω συνδυαστικές τιμές είναι ενδεικτικές και θα επιβεβαιωθούν.",
+      "valid_note": "",
       "extra_rows": [],
       "pay_online": false
     },
@@ -149,7 +149,7 @@
     {
       "type": "regular",
       "name": "Acro Kids",
-      "name_tag": "Τιμή υπό επιβεβαίωση",
+      "name_tag": "",
       "tier_label": "Νέο",
       "sections": [
         { "label": "", "tag": "", "rows": [

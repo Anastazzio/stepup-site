@@ -89,12 +89,12 @@
             { "qty": "2", "name": "2 Exotic / week", "note": "", "amount": "55€", "tbd": false },
             { "qty": "1", "name": "Flexibility, 1 / week", "note": "", "amount": "25€", "tbd": false }
           ] },
-        { "label": "Combinations", "tag": "Indicative prices", "rows": [
+        { "label": "Combinations", "tag": "", "rows": [
             { "qty": "1+1", "name": "Pole + Flex / week", "note": "", "amount": "60€", "tbd": false },
             { "qty": "2+1", "name": "2 Pole + 1 Exotic / week", "note": "", "amount": "85€", "tbd": false }
           ] }
       ],
-      "valid_note": "* The two combination prices above are indicative and will be confirmed.",
+      "valid_note": "",
       "extra_rows": [],
       "pay_online": false
     },
@@ -149,7 +149,7 @@
     {
       "type": "regular",
       "name": "Acro Kids",
-      "name_tag": "Price to be confirmed",
+      "name_tag": "",
       "tier_label": "New",
       "sections": [
         { "label": "", "tag": "", "rows": [
