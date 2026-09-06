@@ -75,10 +75,69 @@
            .join("");
    }
 
+   function setMeta(attr, key, value) {
+         var selector = "meta[" + attr + "='" + key + "']";
+         var node = document.querySelector(selector);
+         if (!node) {
+                 node = document.createElement("meta");
+                 node.setAttribute(attr, key);
+                 document.head.appendChild(node);
+         }
+         node.setAttribute("content", value || "");
+   }
+
    function render(article) {
-         document.title = (article.title || "Step Up") + " | Step Up Dance Studio";
+         var pageTitle = (article.title || "Step Up") + " | Step Up Dance Studio";
+         document.title = pageTitle;
          var descMeta = document.querySelector('meta[name="description"]');
          if (descMeta) descMeta.setAttribute("content", article.description || "");
+
+      // Canonical + hreflang: the static template ships a canonical pointing at
+      // the blog index, which tells search engines every article is a duplicate
+      // of /blog. Point it at this specific article instead so posts can be indexed.
+      var canonicalHref = window.location.origin + window.location.pathname + "?id=" + encodeURIComponent(id);
+      var canonicalNode = document.querySelector('link[rel="canonical"]');
+      if (canonicalNode) canonicalNode.setAttribute("href", canonicalHref);
+
+      setMeta("property", "og:type", "article");
+      setMeta("property", "og:title", pageTitle);
+      setMeta("property", "og:description", article.description || "");
+      setMeta("property", "og:url", canonicalHref);
+      if (article.image) setMeta("property", "og:image", article.image);
+      setMeta("name", "twitter:card", "summary_large_image");
+      setMeta("name", "twitter:title", pageTitle);
+      setMeta("name", "twitter:description", article.description || "");
+
+      // BlogPosting structured data, built from the same fields the CMS already
+      // has (no separate SEO panel needed). Replaces any previous injected copy
+      // so re-renders (client-side nav) don't stack duplicate script tags.
+      var oldLd = document.getElementById("post-blogposting-ld");
+      if (oldLd) oldLd.remove();
+      var ld = document.createElement("script");
+      ld.type = "application/ld+json";
+      ld.id = "post-blogposting-ld";
+      ld.textContent = JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "BlogPosting",
+              "headline": article.title || "",
+              "description": article.description || "",
+              "image": article.image || undefined,
+              "inLanguage": lang,
+              "mainEntityOfPage": canonicalHref,
+              "author": { "@type": "Organization", "name": "Step Up Dance Studio" },
+              "publisher": {
+                      "@type": "Organization",
+                      "name": "Step Up Dance Studio",
+                      "address": {
+                              "@type": "PostalAddress",
+                              "streetAddress": "5 Stratigou Brantouna St",
+                              "postalCode": "54626",
+                              "addressLocality": "Thessaloniki",
+                              "addressCountry": "GR"
+                      }
+              }
+      });
+      document.head.appendChild(ld);
 
       if (catHost) catHost.textContent = article.category_label || "";
          if (titleHost) titleHost.textContent = article.title || "";
