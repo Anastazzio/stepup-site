@@ -3,6 +3,16 @@
 /el/eventsplanning /el/events 301
 /el/weekly-schedule /el/programma-mathimaton 301
 
+# legacy Wix blog post URLs -> new blog articles (added 5/9/2026, preserves old SEO value)
+/el/post/teacher-training-pole-dance-2025 /el/blog/post/?id=pole-teacher-training 301
+/post/el-post-5-logoi-gia-na-matheis-salsa-sti-thessaloniki /blog/post/?id=salsa-5-reasons 301
+/el/post/discover-the-joy-of-bungee-fitness /el/blog/post/?id=discover-bungee-fitness 301
+/el/post/pole-dancing-aerial-hoop-ola-osa-prepei-na-ksereis /el/blog/post/?id=pole-or-aerial-hoop 301
+/el/post/bungee-fitness /el/blog/post/?id=bungee-fitness-benefits-risks 301
+/el/post/ultimate-guide-bachata-history-styles-tips /el/blog/post/?id=bachata-guide-thessaloniki 301
+/post/1-the-ultimate-guide-to-bachata-history-styles-and-where-to-learn /blog/post/?id=bachata-guide-thessaloniki 301
+/el/post/bungee-fitness-thessaloniki /el/blog/post/?id=bungee-fitness-have-you-tried 301
+
 # normalize explicit index.html URLs
 /index.html / 301
 /*/index.html /:splat 301
