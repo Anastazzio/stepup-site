@@ -196,7 +196,7 @@ nav.site-nav{min-height:73px;padding:10px 28px;position:sticky;top:0;z-index:100
   </div>
   </footer>
   <script>window.STEPUP_BLOG_LANG = "en";</script>
-  <script src="https://unpkg.com/marked/marked.min.js" defer></script>
+  <script src="/assets/js/marked.min.js" defer></script>
   <script src="/assets/js/blog-post-render.js" defer></script>
   <script>const menuToggle=document.querySelector('.menu-toggle');const mobileMenu=document.getElementById('mobile-menu');if(menuToggle&&mobileMenu){const closeMenu=()=>{menuToggle.setAttribute('aria-expanded','false');mobileMenu.classList.remove('open');mobileMenu.setAttribute('aria-hidden','true');document.body.classList.remove('menu-open')};menuToggle.addEventListener('click',()=>{const open=menuToggle.getAttribute('aria-expanded')==='true';if(open)return closeMenu();menuToggle.setAttribute('aria-expanded','true');mobileMenu.classList.add('open');mobileMenu.setAttribute('aria-hidden','false');document.body.classList.add('menu-open')});mobileMenu.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeMenu));window.addEventListener('keydown',e=>{if(e.key==='Escape')closeMenu()})}</script>
   </body>
