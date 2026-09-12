@@ -72,7 +72,16 @@
             { "qty": "1+1", "name": "Aerial + Pole / week", "note": "", "amount": "479€", "tbd": false }
           ] }
       ],
-      "valid_note": "* Annual prices apply to purchases made by 15/09/2026.",
+      "valid_note": "* Annual offer prices valid until 15/09/2026",
+      "valid_note_link_text": "View offer terms",
+      "valid_note_modal_title": "Annual Offer Terms 2026–27",
+      "valid_note_modal_paragraphs": [
+        "The annual memberships above are offered at a special promotional price for purchases made until 15/09/2026 and apply to the 2026–27 dance season.",
+        "Due to the special promotional nature and discounted price of this offer, cancellations and refunds are not available after the purchase has been completed, except where otherwise required by applicable law.",
+        "If a student is unable to start on the originally planned date, the activation of the membership may be postponed to a later date, subject to prior arrangement with the studio and class availability.",
+        "The membership may also be transferred to another person, subject to prior notification and arrangement with the studio.",
+        "For any special circumstances, please contact STEP UP Dance Studio."
+      ],
       "extra_rows": [
         { "qty": "1–3", "name": "Aerial Pole", "note": "Private, by appointment", "amount": "Contact us", "tbd": true }
       ],
