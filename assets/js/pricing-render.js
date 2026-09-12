@@ -132,7 +132,25 @@
     });
 
     if (group.valid_note) {
-      block.appendChild(el("p", "valid-tag", group.valid_note));
+      var validP = el("p", "valid-tag");
+      validP.appendChild(document.createTextNode(group.valid_note));
+      if (group.valid_note_link_text) {
+        validP.appendChild(document.createTextNode(" — "));
+        var validBtn = document.createElement("button");
+        validBtn.type = "button";
+        validBtn.className = "valid-tag-link";
+        validBtn.textContent = group.valid_note_link_text;
+        validBtn.addEventListener("click", function () {
+          if (window.stepupOpenPricingModal) {
+            window.stepupOpenPricingModal(
+              group.valid_note_modal_title || "",
+              group.valid_note_modal_paragraphs || []
+            );
+          }
+        });
+        validP.appendChild(validBtn);
+      }
+      block.appendChild(validP);
     }
 
     (group.extra_rows || []).forEach(function (row) {
