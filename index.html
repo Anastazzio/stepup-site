@@ -387,17 +387,75 @@
 .btn-interest-mobile{display:none;background:var(--fuchsia);color:var(--white);padding:11px 20px;font-size:13.5px;font-weight:600;letter-spacing:.2px;text-align:center;}
 .btn-interest-mobile:hover{background:var(--black);}
 @media(max-width:900px){.btn-interest-mobile{display:inline-block;}}
-.app-install-section{background:var(--surface);padding:56px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
-.app-install-inner{display:flex;align-items:center;justify-content:space-between;gap:40px;flex-wrap:wrap;}
-.app-install-copy{max-width:520px;}
-.app-install-copy h2{font-size:26px;margin:8px 0 10px;}
-.app-install-copy p{font-size:14.5px;color:var(--gray);font-weight:300;margin-bottom:22px;}
-.app-install-btn{display:inline-flex;align-items:center;gap:10px;background:var(--fuchsia);color:var(--white);padding:13px 26px;font-weight:600;font-size:14px;letter-spacing:.2px;}
+.app-install-section{
+  position:relative;
+  background-color:#f9e0d7;
+  background-image:
+    linear-gradient(90deg, #f9e0d7 0px, #f9e0d7 240px, rgba(249,224,215,.7) 340px, rgba(249,224,215,0) 460px),
+    url('/assets/images/step-up-app-promo-bg-desktop.webp');
+  background-repeat:no-repeat, no-repeat;
+  background-position:left center, right center;
+  background-size:100% 100%, auto 560px;
+  min-height:560px;
+  display:flex;
+  align-items:center;
+  padding:60px 0;
+  border-top:1px solid var(--border);
+  border-bottom:1px solid var(--border);
+}
+.app-install-section .wrap{width:100%;}
+.app-install-inner{max-width:430px;position:relative;z-index:2;}
+.app-install-inner .eyebrow{color:var(--fuchsia);font-size:12px;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:16px;}
+.app-install-inner h2{font-size:32px;line-height:1.15;margin:0 0 14px;}
+.app-install-inner p{font-size:15px;color:var(--gray);font-weight:300;margin-bottom:20px;}
+.app-install-features{list-style:none;display:flex;flex-wrap:wrap;gap:10px;margin-bottom:24px;padding:0;}
+.app-install-features li{
+  font-size:12.5px;font-weight:600;letter-spacing:.02em;color:var(--black);
+  background:rgba(255,255,255,.72);border:1px solid rgba(58,58,54,.18);
+  padding:7px 14px;border-radius:999px;
+}
+.app-install-btn{
+  display:inline-flex;align-items:center;gap:10px;background:var(--fuchsia);color:var(--white);
+  padding:14px 28px;font-weight:600;font-size:14.5px;margin-bottom:24px;
+  transition:background .2s ease;
+}
 .app-install-btn:hover{background:var(--black);}
-.app-install-qr{display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center;flex-shrink:0;}
-.app-install-qr img{width:132px;height:132px;border:1px solid var(--border);padding:10px;background:var(--white);}
+.app-install-btn:focus-visible{outline:3px solid var(--yellow);outline-offset:3px;}
+.app-install-qr{display:flex;align-items:center;gap:14px;}
+.app-install-qr img{width:96px;height:96px;border:1px solid var(--border);padding:7px;background:var(--white);}
 .app-install-qr span{font-size:12px;color:var(--gray);font-weight:600;}
-@media(max-width:900px){.app-install-qr{display:none;}.app-install-inner{flex-direction:column;align-items:flex-start;}}
+.app-install-mobile-visual{display:none;}
+@media(max-width:1120px){
+  .app-install-inner{max-width:360px;}
+  .app-install-inner h2{font-size:29px;}
+}
+@media(max-width:900px){
+  .app-install-section{
+    display:block;
+    min-height:0;
+    padding:48px 0 330px;
+    background-image:url('/assets/images/step-up-app-promo-bg-desktop.webp');
+    background-position:right bottom;
+    background-size:auto 330px;
+    background-repeat:no-repeat;
+  }
+  .app-install-inner{max-width:520px;}
+  .app-install-inner h2{font-size:28px;}
+}
+@media(max-width:680px){
+  .app-install-section{
+    background-image:none;
+    background-color:var(--off-white);
+    min-height:0;
+    display:block;
+    padding:48px 0;
+  }
+  .app-install-inner{max-width:100%;}
+  .app-install-inner h2{font-size:26px;}
+  .app-install-qr{display:none;}
+  .app-install-mobile-visual{display:block;margin-top:26px;}
+  .app-install-mobile-visual img{width:100%;max-width:300px;height:auto;margin:0 auto;display:block;}
+}
 </style>
 </head>
 <body>
@@ -568,16 +626,24 @@
 </div>
 </section>
 <section class="app-install-section">
-<div class="wrap app-install-inner">
-<div class="app-install-copy">
+<div class="wrap">
+<div class="app-install-inner">
 <div class="eyebrow">STEP UP App</div>
 <h2>STEP UP on your phone</h2>
 <p>Add the STEP UP app to your home screen for quick access to your member area, studio updates and services.</p>
+<ul class="app-install-features">
+<li>Quick access</li>
+<li>Class bookings</li>
+<li>News &amp; Updates</li>
+</ul>
 <a class="app-install-btn" href="https://app.stepupdancegr.com/install" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" fill="none" height="18" viewbox="0 0 24 24" width="18"><rect height="20" rx="2" stroke="currentColor" stroke-width="1.8" width="10" x="7" y="2"></rect><line stroke="currentColor" stroke-linecap="round" stroke-width="1.8" x1="11" x2="13" y1="18" y2="18"></line></svg>Install STEP UP App</a>
-</div>
 <div class="app-install-qr">
-<img alt="QR code to install the STEP UP App" height="132" loading="lazy" src="/assets/qr/install-qr.png" width="132"/>
+<img alt="QR code to install the STEP UP App" height="96" loading="lazy" src="/assets/qr/install-qr.png" width="96"/>
 <span>Scan with your phone</span>
+</div>
+<div class="app-install-mobile-visual">
+<img alt="STEP UP Dance Studio mobile app showing a Pole Dancing class" height="821" loading="lazy" src="/assets/images/step-up-app-promo-mobile.webp" width="640"/>
+</div>
 </div>
 </div>
 </section>
