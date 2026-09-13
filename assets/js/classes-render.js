@@ -72,8 +72,27 @@
       });
       block.appendChild(cards);
 
+      if (cat.promo && cat.promo.url) {
+        block.appendChild(renderCategoryPromo(cat.promo));
+      }
+
       listHost.appendChild(block);
     });
+  }
+
+  function renderCategoryPromo(promo) {
+    var link = document.createElement("a");
+    link.className = "category-promo";
+    link.href = promo.url;
+
+    var copy = el("div", "category-promo-copy");
+    copy.appendChild(el("span", "category-promo-eyebrow", promo.eyebrow || "Aerial Mix"));
+    copy.appendChild(el("strong", null, promo.title || ""));
+    copy.appendChild(el("p", null, promo.text || ""));
+    link.appendChild(copy);
+    link.appendChild(el("span", "category-promo-button", promo.label || "Aerial Mix"));
+
+    return link;
   }
 
   function renderCard(card) {
@@ -136,8 +155,8 @@
           "name": card.title || "",
           "provider": { "@type": "Organization", "name": "Step Up Dance Studio" }
         };
-        if (card.details_url) {
-          course.url = new URL(card.details_url, window.location.origin).href;
+        if (card.url || card.details_url) {
+          course.url = new URL(card.url || card.details_url, window.location.origin).href;
         }
         items.push({
           "@type": "ListItem",

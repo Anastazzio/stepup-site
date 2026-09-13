@@ -443,6 +443,16 @@
 }
 </style>
 <link rel="stylesheet" href="/assets/css/analytics-consent.css?v=20260913"/>
+<style id="classes-category-promo">
+.category-promo{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:28px;margin-top:16px;padding:24px 26px;background:var(--black);color:#fff;border-left:5px solid var(--fuchsia);transition:transform .2s ease,box-shadow .2s ease;}
+.category-promo:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(0,0,0,.13);}
+.category-promo-copy{display:grid;gap:4px;}
+.category-promo-eyebrow{color:var(--yellow);font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;}
+.category-promo-copy strong{font:500 21px/1.25 'Fraunces',serif;color:#fff;}
+.category-promo-copy p{font-size:13.5px;color:#d7d7d4;font-weight:300;}
+.category-promo-button{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 19px;background:var(--yellow);color:var(--black);font-size:13px;font-weight:700;white-space:nowrap;}
+@media(max-width:640px){.category-promo{grid-template-columns:1fr;gap:18px;padding:22px 20px}.category-promo-button{width:100%}}
+</style>
 <script src="/assets/js/analytics-consent.js?v=20260913-2" defer></script>
 </head>
 <body>
@@ -516,7 +526,7 @@
 </main>
 <script>window.STEPUP_LANG = "en";</script>
 <script src="/assets/js/site-notice-render.js" defer></script>
-<script src="/assets/js/classes-render.js" defer></script>
+<script src="/assets/js/classes-render.js?v=20260913-2" defer></script>
 <div class="cta-band">
 <div class="eyebrow">Not sure where to start?</div>
 <h2>Find the class that fits you</h2>
