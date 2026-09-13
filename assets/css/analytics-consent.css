@@ -1,0 +1,19 @@
+.stepup-consent-banner,.stepup-consent-dialog{box-sizing:border-box;color:#30302e;background:#fff;font:16px/1.55 Arial,sans-serif;text-align:left;letter-spacing:normal}
+.stepup-consent-banner{position:fixed;bottom:18px;left:18px;z-index:10000;width:min(580px,calc(100% - 36px));padding:24px;border:1px solid #c6c6c6;border-top:4px solid #b9009e;box-shadow:0 8px 40px #0003;max-height:85vh;overflow:auto}
+.stepup-consent-banner[hidden]{display:none}
+.stepup-consent-banner h2,.stepup-consent-dialog h2{font:700 22px/1.3 Arial,sans-serif;margin:0 0 12px;color:#30302e}
+.stepup-consent-banner p,.stepup-consent-dialog p{margin:0 0 14px;font:16px/1.55 Arial,sans-serif;color:#454542}
+.stepup-consent-banner a,.stepup-consent-dialog a{color:#870073;text-decoration:underline;font:inherit}
+.stepup-consent-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.stepup-consent-button{box-sizing:border-box;appearance:none;border:1px solid #30302e;background:#fff;color:#30302e;border-radius:3px;padding:11px 14px;min-height:46px;cursor:pointer;font:700 14px/1.4 Arial,sans-serif;text-align:center;flex:1 1 auto}
+.stepup-consent-button:hover{background:#f1f1ee}
+.stepup-consent-button:focus-visible,.stepup-consent-banner a:focus-visible,.stepup-consent-dialog a:focus-visible,.stepup-privacy-links a:focus-visible,.stepup-privacy-links button:focus-visible{outline:3px solid #b9009e;outline-offset:3px}
+.stepup-consent-dialog{width:min(540px,calc(100% - 32px));max-height:85vh;padding:28px;border:1px solid #bdbdb9;border-top:4px solid #b9009e;overflow:auto}
+.stepup-consent-dialog::backdrop{background:#0009}
+.stepup-consent-dialog h3{font:700 17px/1.4 Arial,sans-serif;margin:24px 0 8px}
+.stepup-consent-label{display:flex;align-items:center;gap:12px;font-weight:700;margin:24px 0 10px}
+.stepup-consent-label input{width:22px;height:22px;accent-color:#b9009e;flex:0 0 auto}
+.stepup-consent-status{font-size:14px!important}
+.stepup-privacy-links{display:flex;justify-content:center;flex-wrap:wrap;gap:12px 24px;padding:18px 24px;background:#30302e;color:#fff;font:14px/1.5 Arial,sans-serif}
+.stepup-privacy-links a,.stepup-privacy-links button{color:#fff;font:inherit;text-decoration:underline;border:0;background:none;cursor:pointer;padding:8px;min-height:44px}
+@media(max-width:560px){.stepup-consent-banner{bottom:10px;left:10px;width:calc(100% - 20px);padding:18px}.stepup-consent-banner h2,.stepup-consent-dialog h2{font-size:20px}.stepup-consent-actions{display:grid;grid-template-columns:1fr 1fr}.stepup-consent-actions .stepup-consent-button:last-child{grid-column:1/-1}}

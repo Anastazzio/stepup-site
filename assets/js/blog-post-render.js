@@ -44,6 +44,8 @@
    }
 
    function showNotFound() {
+         document.documentElement.dataset.stepupPageReady = "true";
+         window.dispatchEvent(new Event("stepup:page-ready"));
          if (articleWrap) articleWrap.style.display = "none";
          if (notFoundHost) {
                  notFoundHost.style.display = "block";
@@ -168,5 +170,7 @@
 
       if (articleWrap) articleWrap.style.display = "";
          if (notFoundHost) notFoundHost.style.display = "none";
+         document.documentElement.dataset.stepupPageReady = "true";
+         window.dispatchEvent(new Event("stepup:page-ready"));
    }
 })();

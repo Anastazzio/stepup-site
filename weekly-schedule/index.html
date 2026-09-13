@@ -76,6 +76,8 @@ footer .logo img{width:150px;height:auto;object-fit:contain}.bottom-bar{display:
 .menu-toggle{margin-left:0;}
 }
 </style>
+<link rel="stylesheet" href="/assets/css/analytics-consent.css?v=20260913"/>
+<script src="/assets/js/analytics-consent.js?v=20260913" defer></script>
 </head>
 <body>
 <nav aria-label="Main navigation" class="site-nav">
@@ -120,4 +122,5 @@ footer .logo img{width:150px;height:auto;object-fit:contain}.bottom-bar{display:
 const menuToggle=document.querySelector('.menu-toggle');const mobileMenu=document.getElementById('mobile-menu');
 if(menuToggle&&mobileMenu){const closeMenu=()=>{menuToggle.setAttribute('aria-expanded','false');mobileMenu.classList.remove('open');mobileMenu.setAttribute('aria-hidden','true');document.body.classList.remove('menu-open')};menuToggle.addEventListener('click',()=>{const open=menuToggle.getAttribute('aria-expanded')==='true';if(open)return closeMenu();menuToggle.setAttribute('aria-expanded','true');mobileMenu.classList.add('open');mobileMenu.setAttribute('aria-hidden','false');document.body.classList.add('menu-open')});mobileMenu.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeMenu));window.addEventListener('keydown',e=>{if(e.key==='Escape')closeMenu()})}
 </script>
+<div class="stepup-privacy-links"><a href="/privacy/">Cookies & privacy</a><button type="button" data-cookie-settings>Cookie settings</button></div>
 </body></html>
