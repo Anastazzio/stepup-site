@@ -76,7 +76,14 @@
     },
     {
       "name": "Bungee Fitness",
-      "subtitle": "Προπόνηση χωρίς επιβάρυνση στις αρθρώσεις",
+      "subtitle": "Δυναμική προπόνηση με ειδική ζώνη και ελαστικό ιμάντα",
+      "promo": {
+        "eyebrow": "Bungee Fitness",
+        "title": "Θέλεις μια προπόνηση που σε σηκώνει από το έδαφος;",
+        "text": "Δες πώς λειτουργεί το Bungee, τι χρειάζεσαι για να ξεκινήσεις και τις συχνότερες ερωτήσεις.",
+        "label": "Δες το Bungee Fitness",
+        "url": "/el/bungee-fitness-thessaloniki/"
+      },
       "cards": [
         {
           "title": "Bungee Fitness",
@@ -135,6 +142,13 @@
     {
       "name": "High Heels (Commercial)",
       "subtitle": "Χορογραφίες σε τακούνι με σύγχρονο στυλ",
+      "promo": {
+        "eyebrow": "High Heels Dance",
+        "title": "Θέλεις να ξεκινήσεις με ή χωρίς τακούνια;",
+        "text": "Γνώρισε την τεχνική, τη δομή του μαθήματος και όσα χρειάζεσαι για το πρώτο σου μάθημα.",
+        "label": "Δες το High Heels",
+        "url": "/el/high-heels-dance-thessaloniki/"
+      },
       "cards": [
         {
           "title": "High Heels Commercial",
