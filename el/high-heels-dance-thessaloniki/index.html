@@ -19,14 +19,14 @@
 <meta content="Τεχνική, χορογραφία και αυτοπεποίθηση, με ή χωρίς τακούνια, στο κέντρο της Θεσσαλονίκης." property="og:description"/>
 <meta content="https://www.stepupdancegr.com/el/high-heels-dance-thessaloniki/" property="og:url"/>
 <meta content="Step Up Dance Studio" property="og:site_name"/>
-<meta content="https://www.stepupdancegr.com/assets/images/high-heels-show-stepup-thessaloniki.webp" property="og:image"/>
-<meta content="960" property="og:image:width"/>
-<meta content="640" property="og:image:height"/>
-<meta content="Ομαδική χορογραφία High Heels του STEP UP Dance Studio Θεσσαλονίκη" property="og:image:alt"/>
+<meta content="https://www.stepupdancegr.com/assets/images/high-heels-class-stepup-thessaloniki.webp" property="og:image"/>
+<meta content="1800" property="og:image:width"/>
+<meta content="1350" property="og:image:height"/>
+<meta content="Ομαδικό μάθημα High Heels στο STEP UP Dance Studio Θεσσαλονίκη" property="og:image:alt"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="High Heels Dance Θεσσαλονίκη | STEP UP" name="twitter:title"/>
 <meta content="Τεχνική, χορογραφία και αυτοπεποίθηση, με ή χωρίς τακούνια." name="twitter:description"/>
-<meta content="https://www.stepupdancegr.com/assets/images/high-heels-show-stepup-thessaloniki.webp" name="twitter:image"/>
+<meta content="https://www.stepupdancegr.com/assets/images/high-heels-class-stepup-thessaloniki.webp" name="twitter:image"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700&amp;family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&amp;display=swap" rel="stylesheet"/>
@@ -390,7 +390,8 @@
   .proof-item strong{display:block;font:500 28px/1.05 'Fraunces',serif;color:var(--fuchsia);margin-bottom:7px;}
   .proof-item span{font-size:13px;color:var(--gray);}
   .feature-photo{margin:44px auto 0;max-width:1160px;padding:0 32px;}
-  .feature-photo .photo-frame{aspect-ratio:3/2;overflow:hidden;border:1px solid var(--border);background:#ddd;}
+  .feature-photo .photo-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+  .feature-photo .photo-frame{aspect-ratio:4/3;overflow:hidden;border:1px solid var(--border);background:#ddd;}
   .feature-photo img{filter:grayscale(100%);object-position:center 48%;transition:filter .45s ease,transform .45s ease;}
   .feature-photo:hover img{filter:grayscale(0%);transform:scale(1.01);}
   .feature-photo figcaption{font-size:12.5px;color:var(--gray);margin-top:10px;text-align:right;}
@@ -433,6 +434,7 @@
     .hero-single{max-width:560px;justify-self:center;}
     .intro-grid,.choice-grid{grid-template-columns:1fr;gap:36px;}
   }
+  @media(max-width:760px){.feature-photo .photo-grid{grid-template-columns:1fr;}}
   @media(max-width:560px){
     .aerial-hero{padding:40px 0 46px;}
     .aerial-hero h1{font-size:38px;}
@@ -443,7 +445,7 @@
     .proof-item{border-right:0;border-bottom:1px solid var(--border);padding:18px;}
     .proof-item:last-child{border-bottom:0;}
     .feature-photo{padding:0 18px;margin-top:30px;}
-    .feature-photo .photo-frame{aspect-ratio:3/2;}
+    .feature-photo .photo-frame{aspect-ratio:4/3;}
     .feature-photo figcaption{text-align:left;}
     .apparatus-grid{grid-template-columns:1fr;}
     .apparatus-photo{aspect-ratio:4/4.7;}
@@ -576,8 +578,11 @@
 </div>
 
 <figure class="feature-photo">
-<div class="photo-frame"><img src="/assets/images/high-heels-show-stepup-thessaloniki.webp" alt="Ομαδική χορογραφία High Heels του STEP UP Dance Studio Θεσσαλονίκη" width="960" height="640" loading="lazy"/></div>
-<figcaption>High Heels choreography από το STEP UP Dance Studio.</figcaption>
+<div class="photo-grid">
+<div class="photo-frame"><img src="/assets/images/high-heels-class-stepup-thessaloniki.webp" alt="Ομαδικό μάθημα High Heels στο STEP UP Dance Studio Θεσσαλονίκη" width="1800" height="1350" loading="lazy"/></div>
+<div class="photo-frame"><img src="/assets/images/high-heels-show-crop-stepup-thessaloniki.webp" alt="Ομαδική εμφάνιση High Heels του STEP UP Dance Studio Θεσσαλονίκη" width="853" height="640" loading="lazy"/></div>
+</div>
+<figcaption>Από το μάθημα στη σκηνή: High Heels στο STEP UP Dance Studio.</figcaption>
 </figure>
 
 <section>
