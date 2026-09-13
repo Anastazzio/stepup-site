@@ -68,7 +68,7 @@
       "mainEntity":[
         {"@type":"Question","name":"Τι είναι το Aerial Mix;","acceptedAnswer":{"@type":"Answer","text":"Είναι μάθημα Aerial Dance που συνδυάζει Aerial Hoop και Aerial Sling στην ίδια ώρα, με κυκλική εναλλαγή στα δύο όργανα."}},
         {"@type":"Question","name":"Μπορώ να κάνω μόνο Aerial Hoop ή μόνο Aerial Sling;","acceptedAnswer":{"@type":"Answer","text":"Ναι. Μπορείς να δοκιμάζεις και τα δύο ή να δίνεις μεγαλύτερη έμφαση στο όργανο που προτιμάς."}},
-        {"@type":"Question","name":"Είναι κατάλληλο για αρχάριες;","acceptedAnswer":{"@type":"Answer","text":"Ναι. Δεν χρειάζεται προηγούμενη εμπειρία ή έτοιμη δύναμη, καθώς η εξέλιξη γίνεται σταδιακά με καθοδήγηση της δασκάλας."}}
+        {"@type":"Question","name":"Χρειάζεται δύναμη ή ευλυγισία;","acceptedAnswer":{"@type":"Answer","text":"Όχι για να ξεκινήσεις. Η δύναμη, η ισορροπία και η ευλυγισία αναπτύσσονται σταδιακά μέσα από το μάθημα."}}
       ]
     },
     {
@@ -372,15 +372,14 @@
 </style>
 <style id="aerial-mix-page">
   .aerial-hero{background:var(--off-white);border-bottom:1px solid var(--border);padding:64px 0 70px;}
-  .aerial-hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(420px,.9fr);gap:64px;align-items:center;}
+  .aerial-hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(460px,.9fr);gap:52px;align-items:center;}
   .aerial-hero h1{font-size:clamp(42px,5vw,68px);line-height:1.02;margin-bottom:24px;max-width:720px;}
   .aerial-hero .lead{font-size:18px;color:var(--gray);font-weight:300;max-width:630px;margin-bottom:30px;}
   .aerial-hero .hero-actions{display:flex;gap:12px;flex-wrap:wrap;}
   .aerial-hero .btn-outline{border-color:var(--black);color:var(--black);}
   .aerial-hero .btn-outline:hover{background:var(--black);color:#fff;}
-  .hero-duo{display:grid;grid-template-columns:1fr 1fr;gap:12px;min-height:560px;}
-  .hero-duo figure{overflow:hidden;border:1px solid var(--border);background:#ddd;}
-  .hero-duo figure:first-child{margin-top:58px;}
+  .hero-duo{display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:center;}
+  .hero-duo figure{overflow:hidden;border:1px solid var(--border);background:#ddd;aspect-ratio:2/3;}
   .hero-duo img{filter:grayscale(100%);transition:filter .4s ease,transform .4s ease;}
   .hero-duo figure:hover img{filter:grayscale(0%);transform:scale(1.015);}
   .hero-duo .sling-photo{object-position:center 42%;}
@@ -429,9 +428,9 @@
   .faq-list details[open] summary::after{content:'−';}
   .faq-list details p{color:var(--gray);font-weight:300;padding:0 46px 22px 0;}
   .internal-link{text-decoration:underline;text-decoration-color:var(--fuchsia);text-underline-offset:3px;}
-  @media(max-width:900px){
+  @media(max-width:980px){
     .aerial-hero-grid{grid-template-columns:1fr;gap:38px;}
-    .hero-duo{min-height:480px;max-width:650px;width:100%;margin:0 auto;}
+    .hero-duo{max-width:650px;width:100%;margin:0 auto;}
     .intro-grid,.choice-grid{grid-template-columns:1fr;gap:36px;}
   }
   @media(max-width:560px){
@@ -440,8 +439,7 @@
     .aerial-hero .lead{font-size:16px;}
     .aerial-hero .hero-actions{display:grid;grid-template-columns:1fr;}
     .aerial-hero .hero-actions a{width:100%;text-align:center;justify-content:center;}
-    .hero-duo{min-height:360px;gap:7px;}
-    .hero-duo figure:first-child{margin-top:34px;}
+    .hero-duo{gap:7px;}
     .proof-strip{grid-template-columns:1fr;}
     .proof-item{border-right:0;border-bottom:1px solid var(--border);padding:18px;}
     .proof-item:last-child{border-bottom:0;}
@@ -589,11 +587,11 @@
 <div class="section-copy">
 <span class="accent-label">Πώς λειτουργεί</span>
 <h2>Το δικό σου Aerial, με περισσότερες επιλογές</h2>
-<p>Στο Aerial Mix του STEP UP το τμήμα δουλεύει κυκλικά ανάμεσα σε Aerial Hoop και Aerial Sling. Με περίπου 8–9 άτομα και την ίδια δασκάλα, η ομάδα εναλλάσσεται στα δύο όργανα μέσα στην ίδια ώρα.</p>
-<p>Δεν είσαι υποχρεωμένη να ακολουθείς πάντα την ίδια αναλογία. Μπορείς να εξασκείσαι και στα δύο ή να επιλέγεις περισσότερο στεφάνι ή περισσότερο πανί, ανάλογα με το τι σου αρέσει και τι θέλεις να εξελίξεις.</p>
+<p>Στο Aerial Mix του STEP UP το τμήμα δουλεύει κυκλικά ανάμεσα σε Aerial Hoop και Aerial Sling. Με περίπου 8–9 άτομα και σταθερή καθοδήγηση, η ομάδα εναλλάσσεται στα δύο όργανα μέσα στην ίδια ώρα.</p>
+<p>Δεν χρειάζεται να ακολουθείς πάντα την ίδια αναλογία. Μπορείς να εξασκείσαι και στα δύο ή να επιλέγεις περισσότερο στεφάνι ή περισσότερο πανί, ανάλογα με το τι σου αρέσει και τι θέλεις να εξελίξεις.</p>
 </div>
 <div class="steps">
-<div class="step"><span class="step-number">01</span><div><h3>Ξεκινάτε μαζί</h3><p>Η δασκάλα οργανώνει το μάθημα και τις ασκήσεις ανάλογα με το επίπεδο της ομάδας.</p></div></div>
+<div class="step"><span class="step-number">01</span><div><h3>Ξεκινάτε μαζί</h3><p>Το μάθημα και οι ασκήσεις οργανώνονται ανάλογα με το επίπεδο της ομάδας.</p></div></div>
 <div class="step"><span class="step-number">02</span><div><h3>Εναλλάσσεστε στα όργανα</h3><p>Το τμήμα κινείται κυκλικά ανάμεσα σε Hoop και Sling, ώστε να υπάρχει χρόνος εξάσκησης και στα δύο.</p></div></div>
 <div class="step"><span class="step-number">03</span><div><h3>Βρίσκεις τη δική σου ισορροπία</h3><p>Συνεχίζεις με τα δύο όργανα ή δίνεις μεγαλύτερη έμφαση σε εκείνο που σου ταιριάζει περισσότερο.</p></div></div>
 </div>
@@ -624,11 +622,11 @@
 <div class="wrap-wide choice-grid">
 <div class="choice-panel">
 <h2>Κάνεις και τα δύο — ή δίνεις έμφαση σε αυτό που αγαπάς περισσότερο</h2>
-<p>Οι περισσότερες μαθήτριες θέλουν να γνωρίσουν και το Hoop και το Sling. Γι’ αυτό τα εντάξαμε στο ίδιο τμήμα, αντί να απαιτούνται δύο διαφορετικά μαθήματα.</p>
+<p>Οι περισσότεροι μαθητές θέλουν να γνωρίσουν και το Hoop και το Sling. Γι’ αυτό τα εντάξαμε στο ίδιο τμήμα, αντί να απαιτούνται δύο διαφορετικά μαθήματα.</p>
 <p><strong>Το αποτέλεσμα:</strong> περισσότερη ποικιλία, προσωπική επιλογή και δύο εναέρια όργανα με μία συνδρομή.</p>
 </div>
 <div class="benefit-list">
-<div class="benefit"><span class="benefit-mark">✓</span><div><h3>Κατάλληλο και για αρχάριες</h3><p>Δεν χρειάζεται να έχεις προηγούμενη εμπειρία ή έτοιμη δύναμη πριν ξεκινήσεις.</p></div></div>
+<div class="benefit"><span class="benefit-mark">✓</span><div><h3>Χωρίς προηγούμενη εμπειρία</h3><p>Η απαραίτητη δύναμη και τεχνική αναπτύσσονται σταδιακά μέσα από το μάθημα.</p></div></div>
 <div class="benefit"><span class="benefit-mark">✓</span><div><h3>Σταδιακή εξέλιξη</h3><p>Οι ασκήσεις προσαρμόζονται στο επίπεδό σου και προχωρούν βήμα βήμα.</p></div></div>
 <div class="benefit"><span class="benefit-mark">✓</span><div><h3>Μικρό, οργανωμένο τμήμα</h3><p>Η κυκλική ροή επιτρέπει στην ομάδα να αξιοποιεί τα δύο όργανα μέσα στο ίδιο μάθημα.</p></div></div>
 <div class="benefit"><span class="benefit-mark">✓</span><div><h3>Στο κέντρο της Θεσσαλονίκης</h3><p>Στρατηγού Μπραντούνα 5, λίγα λεπτά από την πλατεία Δημοκρατίας.</p></div></div>
@@ -644,8 +642,8 @@
 </div>
 <div class="faq-list">
 <details><summary>Πρέπει να διαλέξω Hoop ή Sling από την αρχή;</summary><p>Όχι. Μπορείς να δοκιμάζεις και τα δύο μέσα στο ίδιο μάθημα και να αποφασίζεις στην πορεία πού θέλεις να δώσεις περισσότερη έμφαση.</p></details>
-<details><summary>Μπορώ να κάνω μόνο στεφάνι ή μόνο πανί;</summary><p>Ναι. Παρότι το τμήμα λειτουργεί κυκλικά, μπορείς να επικεντρωθείς περισσότερο στο όργανο που προτιμάς, σε συνεννόηση με τη δασκάλα.</p></details>
-<details><summary>Χρειάζεται να είμαι ήδη δυνατή ή ευλύγιστη;</summary><p>Όχι. Η δύναμη, η ισορροπία και η ευλυγισία καλλιεργούνται σταδιακά μέσα από το μάθημα.</p></details>
+<details><summary>Μπορώ να κάνω μόνο στεφάνι ή μόνο πανί;</summary><p>Ναι. Παρότι το τμήμα λειτουργεί κυκλικά, μπορείς να επικεντρωθείς περισσότερο στο όργανο που προτιμάς.</p></details>
+<details><summary>Χρειάζεται δύναμη ή ευλυγισία;</summary><p>Όχι για να ξεκινήσεις. Η δύναμη, η ισορροπία και η ευλυγισία αναπτύσσονται σταδιακά μέσα από το μάθημα.</p></details>
 <details><summary>Τι να φορέσω στο πρώτο μάθημα;</summary><p>Εφαρμοστά, άνετα ρούχα που καλύπτουν τα πόδια και τις μασχάλες, χωρίς φερμουάρ, κουμπιά ή κοσμήματα που μπορεί να πιαστούν στο ύφασμα ή στο στεφάνι.</p></details>
 <details><summary>Πού γίνονται τα μαθήματα;</summary><p>Στο STEP UP Dance Studio, Στρατηγού Μπραντούνα 5, στο κέντρο της Θεσσαλονίκης. Δες επίσης τις <a class="internal-link" href="/el/pricing/">τρέχουσες τιμές και τα πακέτα</a>.</p></details>
 </div>
@@ -653,7 +651,7 @@
 </section>
 </main>
 <div class="cta-band">
-<div class="eyebrow">Έτοιμη να πετάξεις;</div>
+<div class="eyebrow">Θέλεις να δοκιμάσεις;</div>
 <h2>Γνώρισε το Aerial Mix του STEP UP</h2>
 <p>Συμπλήρωσε τη φόρμα ενδιαφέροντος και πες μας τη διαθεσιμότητά σου. Θα σε βοηθήσουμε να βρεις το κατάλληλο τμήμα.</p>
 <div class="cta-buttons">
