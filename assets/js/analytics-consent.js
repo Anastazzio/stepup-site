@@ -20,7 +20,7 @@
   var text = isGreek ? {
     title: 'Η επιλογή σου για τα cookies',
     description: 'Το STEP UP Dance Studio χρησιμοποιεί Google Analytics μόνο με την άδειά σου, για στατιστικά επισκεψιμότητας και βελτίωση του website. Η επιλογή σου δεν επηρεάζει την πρόσβαση στις σελίδες.',
-    accept: 'Αποδοχή analytics', reject: 'Απόρριψη analytics', settings: 'Ρυθμίσεις cookies',
+    accept: 'Αποδοχή cookies', reject: 'Απόρριψη cookies', settings: 'Διαμόρφωση cookies',
     details: 'Cookies & απόρρητο', necessary: 'Απαραίτητη αποθήκευση',
     necessaryText: 'Θυμόμαστε την επιλογή σου για 180 ημέρες σε αυτόν τον browser.',
     analytics: 'Στατιστικά Google Analytics',
@@ -30,7 +30,7 @@
   } : {
     title: 'Your cookie choice',
     description: 'STEP UP Dance Studio uses Google Analytics only with your permission, to understand visits and improve this website. Your choice does not affect access to any page.',
-    accept: 'Accept analytics', reject: 'Reject analytics', settings: 'Cookie settings',
+    accept: 'Accept cookies', reject: 'Reject cookies', settings: 'Configure cookies',
     details: 'Cookies & privacy', necessary: 'Necessary storage',
     necessaryText: 'We remember your choice for 180 days in this browser.',
     analytics: 'Google Analytics statistics',
