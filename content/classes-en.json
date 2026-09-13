@@ -76,7 +76,14 @@
     },
     {
       "name": "Bungee Fitness",
-      "subtitle": "Low-impact aerial fitness",
+      "subtitle": "Dynamic training with a specialised harness and elastic cord",
+      "promo": {
+        "eyebrow": "Bungee Fitness",
+        "title": "Looking for a workout that lifts you off the ground?",
+        "text": "See how Bungee works, what you need to start and answers to the most common questions.",
+        "label": "Explore Bungee Fitness",
+        "url": "/bungee-fitness-thessaloniki/"
+      },
       "cards": [
         {
           "title": "Bungee Fitness",
@@ -135,6 +142,13 @@
     {
       "name": "High Heels (Commercial)",
       "subtitle": "Heels choreography with a modern commercial style",
+      "promo": {
+        "eyebrow": "High Heels Dance",
+        "title": "Want to start with or without heels?",
+        "text": "Explore the technique, class structure and everything you need for your first class.",
+        "label": "Explore High Heels",
+        "url": "/high-heels-dance-thessaloniki/"
+      },
       "cards": [
         {
           "title": "High Heels Commercial",
