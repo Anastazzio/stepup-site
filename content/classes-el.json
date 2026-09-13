@@ -47,14 +47,22 @@
     {
       "name": "Aerial Dance",
       "subtitle": "Sling, Hoop, Pole και η αίσθηση της πτήσης",
+      "promo": {
+        "eyebrow": "Aerial Mix",
+        "title": "Hoop ή Sling; Δεν χρειάζεται να διαλέξεις.",
+        "text": "Δοκιμάζεις και τα δύο όργανα στο ίδιο μάθημα και με μία συνδρομή.",
+        "label": "Δες το Aerial Mix",
+        "url": "/el/aerial-dance-thessaloniki/"
+      },
       "cards": [
         {
-          "title": "Aerial Sling & Aerial Hoop (Lyra)",
-          "description": "Χτίζεις δύναμη κορμού και άνω σώματος, μαθαίνεις φιγούρες πάνω στο ύφασμα ή στον κρίκο και εξερευνάς τον εναέριο χορό με ασφάλεια.",
+          "title": "Aerial Hoop & Aerial Sling (Lyra)",
+          "description": "Γνωρίζεις στεφάνι και πανί με ασφαλή, σταδιακή καθοδήγηση και τη δυνατότητα να δώσεις μεγαλύτερη έμφαση στο όργανο που προτιμάς.",
           "level": "Όλα τα επίπεδα",
           "badge": "",
           "image": "",
-          "image_alt": ""
+          "image_alt": "",
+          "url": "/el/aerial-dance-thessaloniki/"
         },
         {
           "title": "Aerial Pole",
@@ -162,4 +170,3 @@
     }
   ]
 }
-

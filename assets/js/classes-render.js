@@ -72,8 +72,27 @@
       });
       block.appendChild(cards);
 
+      if (cat.promo && cat.promo.url) {
+        block.appendChild(renderCategoryPromo(cat.promo));
+      }
+
       listHost.appendChild(block);
     });
+  }
+
+  function renderCategoryPromo(promo) {
+    var link = document.createElement("a");
+    link.className = "category-promo";
+    link.href = promo.url;
+
+    var copy = el("div", "category-promo-copy");
+    copy.appendChild(el("span", "category-promo-eyebrow", promo.eyebrow || "Aerial Mix"));
+    copy.appendChild(el("strong", null, promo.title || ""));
+    copy.appendChild(el("p", null, promo.text || ""));
+    link.appendChild(copy);
+    link.appendChild(el("span", "category-promo-button", promo.label || "Aerial Mix"));
+
+    return link;
   }
 
   function renderCard(card) {
@@ -100,8 +119,8 @@
     var meta = el("div", "meta");
     var priceSpan = el("span", "price");
     var priceLink = document.createElement("a");
-    priceLink.href = priceHref;
-    priceLink.textContent = priceLabel;
+    priceLink.href = card.details_url || priceHref;
+    priceLink.textContent = card.details_label || priceLabel;
     priceSpan.appendChild(priceLink);
     meta.appendChild(priceSpan);
     meta.appendChild(el("span", "level", card.level || ""));
@@ -131,14 +150,18 @@
     categories.forEach(function (cat) {
       (cat.cards || []).forEach(function (card) {
         position++;
+        var course = {
+          "@type": "Course",
+          "name": card.title || "",
+          "provider": { "@type": "Organization", "name": "Step Up Dance Studio" }
+        };
+        if (card.url || card.details_url) {
+          course.url = new URL(card.url || card.details_url, window.location.origin).href;
+        }
         items.push({
           "@type": "ListItem",
           "position": position,
-          "item": {
-            "@type": "Course",
-            "name": card.title || "",
-            "provider": { "@type": "Organization", "name": "Step Up Dance Studio" }
-          }
+          "item": course
         });
       });
     });
@@ -147,4 +170,3 @@
     script.textContent = JSON.stringify(data, null, 2);
   }
 })();
-
