@@ -100,8 +100,8 @@
     var meta = el("div", "meta");
     var priceSpan = el("span", "price");
     var priceLink = document.createElement("a");
-    priceLink.href = priceHref;
-    priceLink.textContent = priceLabel;
+    priceLink.href = card.details_url || priceHref;
+    priceLink.textContent = card.details_label || priceLabel;
     priceSpan.appendChild(priceLink);
     meta.appendChild(priceSpan);
     meta.appendChild(el("span", "level", card.level || ""));
@@ -131,14 +131,18 @@
     categories.forEach(function (cat) {
       (cat.cards || []).forEach(function (card) {
         position++;
+        var course = {
+          "@type": "Course",
+          "name": card.title || "",
+          "provider": { "@type": "Organization", "name": "Step Up Dance Studio" }
+        };
+        if (card.details_url) {
+          course.url = new URL(card.details_url, window.location.origin).href;
+        }
         items.push({
           "@type": "ListItem",
           "position": position,
-          "item": {
-            "@type": "Course",
-            "name": card.title || "",
-            "provider": { "@type": "Organization", "name": "Step Up Dance Studio" }
-          }
+          "item": course
         });
       });
     });
@@ -147,4 +151,3 @@
     script.textContent = JSON.stringify(data, null, 2);
   }
 })();
-

@@ -49,12 +49,14 @@
       "subtitle": "Sling, Hoop, Pole and the feeling of flight",
       "cards": [
         {
-          "title": "Aerial Sling & Aerial Hoop (Lyra)",
-          "description": "Build core and upper-body strength, learn skills on fabric or hoop and explore aerial movement with structured guidance.",
+          "title": "Aerial Mix: Hoop & Sling",
+          "description": "Two aerial apparatuses in one class: rotate between hoop and sling with one membership, while choosing where you want to place more emphasis.",
           "level": "All levels",
           "badge": "",
           "image": "",
-          "image_alt": ""
+          "image_alt": "",
+          "details_url": "/aerial-dance-thessaloniki/",
+          "details_label": "Learn more"
         },
         {
           "title": "Aerial Pole",
@@ -162,4 +164,3 @@
     }
   ]
 }
-
