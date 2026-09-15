@@ -1,17 +1,36 @@
 # STEP UP legacy redirects
 /eventsplanning /events 301
 /el/eventsplanning /el/events 301
-/el/weekly-schedule /el/programma-mathimaton 301
+/el/weekly-schedule /el/programma-mathimaton/ 301
+
+# old query-string article URLs -> crawlable static article pages
+/el/blog/post id=:id /el/blog/:id/ 301!
+/blog/post id=:id /blog/:id/ 301!
 
 # legacy Wix blog post URLs -> new blog articles (added 5/9/2026, preserves old SEO value)
-/el/post/teacher-training-pole-dance-2025 /el/blog/post/?id=pole-teacher-training 301
-/post/el-post-5-logoi-gia-na-matheis-salsa-sti-thessaloniki /blog/post/?id=salsa-5-reasons 301
-/el/post/discover-the-joy-of-bungee-fitness /el/blog/post/?id=discover-bungee-fitness 301
-/el/post/pole-dancing-aerial-hoop-ola-osa-prepei-na-ksereis /el/blog/post/?id=pole-or-aerial-hoop 301
-/el/post/bungee-fitness /el/blog/post/?id=bungee-fitness-benefits-risks 301
-/el/post/ultimate-guide-bachata-history-styles-tips /el/blog/post/?id=bachata-guide-thessaloniki 301
-/post/1-the-ultimate-guide-to-bachata-history-styles-and-where-to-learn /blog/post/?id=bachata-guide-thessaloniki 301
-/el/post/bungee-fitness-thessaloniki /el/blog/post/?id=bungee-fitness-have-you-tried 301
+/el/post/teacher-training-pole-dance-2025 /el/blog/pole-teacher-training/ 301
+/post/el-post-5-logoi-gia-na-matheis-salsa-sti-thessaloniki /blog/salsa-5-reasons/ 301
+/el/post/discover-the-joy-of-bungee-fitness /el/blog/discover-bungee-fitness/ 301
+/el/post/pole-dancing-aerial-hoop-ola-osa-prepei-na-ksereis /el/blog/pole-or-aerial-hoop/ 301
+/el/post/bungee-fitness /el/blog/bungee-fitness-benefits-risks/ 301
+/el/post/ultimate-guide-bachata-history-styles-tips /el/blog/bachata-guide-thessaloniki/ 301
+/post/1-the-ultimate-guide-to-bachata-history-styles-and-where-to-learn /blog/bachata-guide-thessaloniki/ 301
+/el/post/bungee-fitness-thessaloniki /el/blog/bungee-fitness-have-you-tried/ 301
+
+# additional indexed Wix URLs still receiving Google impressions
+/el/post/hecate-s-tree-aerial-retreat-στη-σαμοθράκη-28-30-αυγούστου-2026 /el/blog/hecates-tree-retreat/ 301
+/el/post/ksekina-pole-dancing-kai-aerial-dance /el/blog/pole-aerial-classes-guide/ 301
+/el/post/mythoi-alitheies-pole-dancing-thessaloniki /el/blog/pole-aerial-classes-guide/ 301
+/el/post/pole-dance-i-teleia-gimnastiki /el/blog/wellbeing-through-pole-dance/ 301
+/el/post/pole-dancing-deka-logoi-gia-na-piaseis-ton-stilo /el/blog/wellbeing-through-pole-dance/ 301
+/el/post/pole-dancing-thessaloniki /el/poledancing-thessaloniki/ 301
+/el/post/el-post-5-logoi-na-ksekinisete-pole-dancing-tora /el/blog/wellbeing-through-pole-dance/ 301
+/el/post/γιατί-πρέπει-να-δοκιμάσετε-pole-dancing /el/blog/wellbeing-through-pole-dance/ 301
+/el/post/pole-dancing-ότι-χρειάζεται-να-ξέρεις-αν-σκέφτεσαι-να-ξεκινήσεις-pole-dance /el/blog/pole-aerial-classes-guide/ 301
+/post/bungee-fitness-to-exei-dokimasei /blog/bungee-fitness-have-you-tried/ 301
+/post/pole-dancing-deka-logoi-na-piaseis-ton-stilo /blog/wellbeing-through-pole-dance/ 301
+/post/pole-dancing-faq-thessaloniki /poledancing-thessaloniki/ 301
+/post/ta-ofeli-tou-xorou /blog/wellbeing-through-pole-dance/ 301
 
 # normalize explicit index.html URLs
 /index.html / 301

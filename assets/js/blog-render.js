@@ -34,10 +34,10 @@
 
   function postUrl(article) {
     // Articles that live on another site keep their external "link".
-    // Everything else opens its own page on this site (/blog/post/?id=...).
+    // Everything else opens its own crawlable page on this site.
     if (article.link) return article.link;
-    var base = lang === "el" ? "/el/blog/post/" : "/blog/post/";
-    return base + "?id=" + encodeURIComponent(article.id || "");
+    var base = lang === "el" ? "/el/blog/" : "/blog/";
+    return base + encodeURIComponent(article.id || "") + "/";
   }
 
   function el(tag, cls, text) {

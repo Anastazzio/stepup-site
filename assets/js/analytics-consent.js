@@ -97,6 +97,7 @@
       send_page_view: false,
       allow_google_signals: false,
       allow_ad_personalization_signals: false,
+      linker: { domains: ['stepupdancegr.com', 'app.stepupdancegr.com'], accept_incoming: true },
       cookie_domain: location.hostname,
       cookie_expires: AGE / 1000,
       cookie_update: false,
@@ -147,6 +148,31 @@
     if (dialog && dialog.open) dialog.close();
     applyChoice();
     sendPage();
+  }
+
+  function trackAction(eventName, link) {
+    if (!initialized || !consent || !consent.analytics) return;
+    var href = link.getAttribute('href') || '';
+    var resolved;
+    try { resolved = new URL(href, location.href); } catch (_) { return; }
+    window.gtag('event', eventName, {
+      send_to: ID,
+      link_url: resolved.href,
+      link_text: (link.textContent || '').trim().slice(0, 100),
+      page_path: location.pathname,
+      language: isGreek ? 'el' : 'en'
+    });
+  }
+
+  function actionEvent(link) {
+    var href = link.getAttribute('href') || '';
+    if (/^https:\/\/app\.stepupdancegr\.com\/interest(?:[/?#]|$)/i.test(href)) return 'interest_form_click';
+    if (/^https:\/\/app\.stepupdancegr\.com\/install(?:[/?#]|$)/i.test(href)) return 'install_app_click';
+    if (/^tel:/i.test(href)) return 'phone_click';
+    if (/^mailto:/i.test(href)) return 'email_click';
+    if (/^\/(?:el\/)?pricing\/?(?:[?#]|$)/i.test(href)) return 'pricing_click';
+    if (/^\/(?:el\/programma-mathimaton|weekly-schedule)\/?(?:[?#]|$)/i.test(href)) return 'schedule_click';
+    return '';
   }
 
   function el(tag, label, className) {
@@ -214,6 +240,12 @@
     document.querySelectorAll('[data-cookie-settings]').forEach(function (node) { node.addEventListener('click', openSettings); });
     consent = readChoice();
     applyChoice();
+    document.addEventListener('click', function (event) {
+      var link = event.target.closest && event.target.closest('a[href]');
+      if (!link) return;
+      var eventName = actionEvent(link);
+      if (eventName) trackAction(eventName, link);
+    });
   }
 
   window.STEPUPConsent = { open: openSettings };
