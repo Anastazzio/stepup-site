@@ -1,10 +1,11 @@
-const BLOG_ID_PATTERN = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
+import type { Config, Context } from "@netlify/edge-functions";
 
-export default (request) => {
+export default (request: Request, _context: Context) => {
+  const blogIdPattern = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
   const sourceUrl = new URL(request.url);
   const articleId = sourceUrl.searchParams.get("id");
 
-  if (!articleId || !BLOG_ID_PATTERN.test(articleId)) {
+  if (!articleId || !blogIdPattern.test(articleId)) {
     return;
   }
 
@@ -20,13 +21,11 @@ export default (request) => {
   return Response.redirect(destinationUrl, 301);
 };
 
-export const config = {
+export const config: Config = {
   path: [
     "/blog/post",
     "/blog/post/",
     "/el/blog/post",
     "/el/blog/post/",
   ],
-  method: ["GET", "HEAD"],
-  onError: "bypass",
 };
