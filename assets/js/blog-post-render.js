@@ -24,7 +24,7 @@
         ? "Δεν βρέθηκε αυτό το άρθρο. Μπορεί να έχει αφαιρεθεί ή να άλλαξε η διεύθυνσή του."
            : "This article could not be found. It may have been removed or its link changed.";
     var backLabel = lang === "el" ? "← Πίσω στο Blog" : "← Back to Blog";
-    var backHref = lang === "el" ? "/el/blog" : "/blog";
+    var backHref = lang === "el" ? "/el/blog/" : "/blog/";
 
    if (!id || !host) {
          showNotFound();

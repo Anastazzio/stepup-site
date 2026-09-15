@@ -139,9 +139,9 @@ for (const lang of ["en", "el"]) {
       .replace(/\s*<script src="\/assets\/js\/blog-post-render\.js" defer><\/script>/, "");
 
     if (isGreek) {
-      html = html.replaceAll('href="/blog" lang="en"', `href="${counterpartPath}" lang="en"`);
+      html = html.replaceAll('href="/blog/" lang="en"', `href="${counterpartPath}" lang="en"`);
     } else {
-      html = html.replaceAll('href="/el/blog" lang="el"', `href="${counterpartPath}" lang="el"`);
+      html = html.replaceAll('href="/el/blog/" lang="el"', `href="${counterpartPath}" lang="el"`);
     }
 
     const output = path.join(root, canonicalPath.slice(1), "index.html");

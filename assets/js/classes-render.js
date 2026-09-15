@@ -15,7 +15,7 @@
   var listHost = document.getElementById("classes-list");
   if (!galleryHost && !listHost) return;
 
-  var priceHref = lang === "el" ? "/el/pricing" : "/pricing";
+  var priceHref = lang === "el" ? "/el/pricing/" : "/pricing/";
   var priceLabel = lang === "el" ? "Δες τιμές" : "View prices";
 
   fetch(jsonUrl, { cache: "no-cache" })
