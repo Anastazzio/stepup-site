@@ -1,7 +1,11 @@
 # STEP UP legacy redirects
-/eventsplanning /events 301
-/el/eventsplanning /el/events 301
+/eventsplanning /events/ 301
+/el/eventsplanning /el/events/ 301
 /el/weekly-schedule /el/programma-mathimaton/ 301
+
+# retired Wix pricing route -> current canonical pricing page
+/plans-pricing /pricing/ 301
+/plans-pricing/ /pricing/ 301
 
 # old query-string article URLs -> crawlable static article pages
 /el/blog/post id=:id /el/blog/:id/ 301!

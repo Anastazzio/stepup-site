@@ -130,7 +130,7 @@ for (const lang of ["en", "el"]) {
 
     let html = template
       .replace(/<title>[\s\S]*?<\/title>/, `<title>${escapeHtml(title)}</title>`)
-      .replace(/<meta content="[\s\S]*?" name="description"\/>/, `<meta content="${escapeHtml(description)}" name="description"/>`)
+      .replace(/<meta content="[^"]*" name="description"\/>/, `<meta content="${escapeHtml(description)}" name="description"/>`)
       .replace(/<meta content="(?:noindex|index), follow" name="robots"\/>/, '<meta content="index, follow" name="robots"/>')
       .replace(/<link href="https:\/\/www\.stepupdancegr\.com\/(el\/)?blog\/" rel="canonical"\/>/, `<link href="${canonical}" rel="canonical"/>\n${seoTags}`)
       .replace(/<main class="wrap">[\s\S]*?<\/main>/, articleMarkup)
