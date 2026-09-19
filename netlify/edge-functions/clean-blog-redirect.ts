@@ -8,6 +8,8 @@ export default (request: Request, _context: Context) => {
       "/el/blog/wellbeing-through-pole-dance/",
     "/el/post/pole-dancing-ότι-χρειάζεται-να-ξέρεις-αν-σκέφτεσαι-να-ξεκινήσεις-pole-dance":
       "/el/blog/pole-aerial-classes-guide/",
+    "/el/post/salsa-ιστορία-και-προέλευση":
+      "/el/blog/salsa-history-origin/",
   };
 
   const blogIdPattern = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;

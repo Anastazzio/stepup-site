@@ -49,11 +49,24 @@ function pageTitle(article) {
   return title.length <= 51 ? `${title} | STEP UP` : title;
 }
 
+const blogContent = Object.fromEntries(
+  ["en", "el"].map((lang) => {
+    const contentPath = path.join(root, `content/blog-${lang}.json`);
+    return [lang, JSON.parse(fs.readFileSync(contentPath, "utf8"))];
+  }),
+);
+const articleIds = Object.fromEntries(
+  Object.entries(blogContent).map(([lang, content]) => [
+    lang,
+    new Set((content.articles || []).map((article) => article.id)),
+  ]),
+);
+
 for (const lang of ["en", "el"]) {
   const isGreek = lang === "el";
   const contentPath = path.join(root, `content/blog-${lang}.json`);
   const templatePath = path.join(root, isGreek ? "el/blog/post/index.html" : "blog/post/index.html");
-  const content = JSON.parse(fs.readFileSync(contentPath, "utf8"));
+  const content = blogContent[lang];
   const template = fs.readFileSync(templatePath, "utf8");
 
   for (const article of content.articles || []) {
@@ -67,11 +80,14 @@ for (const lang of ["en", "el"]) {
     const counterpartPath = `${counterpartPrefix}/${article.id}/`;
     const canonical = `${siteOrigin}${canonicalPath}`;
     const counterpart = `${siteOrigin}${counterpartPath}`;
+    const counterpartLanguage = isGreek ? "en" : "el";
+    const counterpartExists = articleIds[counterpartLanguage].has(article.id);
+    const languageSwitchPath = counterpartExists ? counterpartPath : `${counterpartPrefix}/`;
     const title = pageTitle(article);
     const description = String(article.description || "").trim();
     const image = materializeDataImage(article, lang);
     const body = cleanInternalPostLinks(article.body || article.description || "", lang);
-    const metaLine = [article.date_label, article.read_time].filter(Boolean).join(" · ");
+    const metaLine = [article.author, article.date_label, article.read_time].filter(Boolean).join(" · ");
 
     const structuredData = {
       "@context": "https://schema.org",
@@ -82,9 +98,12 @@ for (const lang of ["en", "el"]) {
           headline: article.title || "",
           description,
           ...(image ? { image: image.startsWith("http") ? image : `${siteOrigin}${image}` } : {}),
+          ...(article.date_published ? { datePublished: article.date_published } : {}),
           inLanguage: lang,
           mainEntityOfPage: { "@type": "WebPage", "@id": canonical },
-          author: { "@type": "Organization", name: "STEP UP Dance Studio" },
+          author: article.author
+            ? { "@type": "Person", name: article.author }
+            : { "@type": "Organization", name: "STEP UP Dance Studio" },
           publisher: {
             "@type": "Organization",
             name: "STEP UP Dance Studio",
@@ -102,10 +121,17 @@ for (const lang of ["en", "el"]) {
       ]
     };
 
-    const seoTags = [
+    const alternateTags = [
       `<link rel="alternate" hreflang="${lang}" href="${canonical}"/>`,
-      `<link rel="alternate" hreflang="${isGreek ? "en" : "el"}" href="${counterpart}"/>`,
-      `<link rel="alternate" hreflang="x-default" href="${isGreek ? counterpart : canonical}"/>`,
+      ...(counterpartExists
+        ? [
+            `<link rel="alternate" hreflang="${counterpartLanguage}" href="${counterpart}"/>`,
+            `<link rel="alternate" hreflang="x-default" href="${isGreek ? counterpart : canonical}"/>`,
+          ]
+        : []),
+    ];
+    const seoTags = [
+      ...alternateTags,
       `<meta property="og:type" content="article"/>`,
       `<meta property="og:title" content="${escapeHtml(title)}"/>`,
       `<meta property="og:description" content="${escapeHtml(description)}"/>`,
@@ -139,9 +165,9 @@ for (const lang of ["en", "el"]) {
       .replace(/\s*<script src="\/assets\/js\/blog-post-render\.js" defer><\/script>/, "");
 
     if (isGreek) {
-      html = html.replaceAll('href="/blog/" lang="en"', `href="${counterpartPath}" lang="en"`);
+      html = html.replaceAll('href="/blog/" lang="en"', `href="${languageSwitchPath}" lang="en"`);
     } else {
-      html = html.replaceAll('href="/el/blog/" lang="el"', `href="${counterpartPath}" lang="el"`);
+      html = html.replaceAll('href="/el/blog/" lang="el"', `href="${languageSwitchPath}" lang="el"`);
     }
 
     const output = path.join(root, canonicalPath.slice(1), "index.html");
