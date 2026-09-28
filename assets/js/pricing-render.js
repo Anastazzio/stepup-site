@@ -23,13 +23,6 @@
       renderGroups(Array.isArray(data.groups) ? data.groups : [], data);
       renderPayOnline("pricing-pay-top", data);
       renderPayOnline("pricing-pay-bottom", data);
-      if (listHost && listHost.querySelector(".price-row")) {
-        var printButton = document.getElementById("pricing-print-trigger");
-        if (printButton) {
-          printButton.hidden = false;
-          printButton.addEventListener("click", function () { window.print(); });
-        }
-      }
     })
     .catch(function () {
       /* leave whatever static markup (if any) was already in the page */

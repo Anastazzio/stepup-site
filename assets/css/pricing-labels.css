@@ -1,0 +1,26 @@
+.pricing-label {
+  display: inline-block;
+  margin: 3px 0 0 8px;
+  padding: 3px 7px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  vertical-align: middle;
+  font: 700 10px/1.2 Archivo, Arial, sans-serif;
+  letter-spacing: .02em;
+  white-space: normal;
+}
+.pricing-label--none { background: #fbe8ed; color: #83183c; border-color: #df8aa4; }
+.pricing-label--with { background: #e2f2eb; color: #17543d; border-color: #8cbea6; }
+.pricing-label--deal { background: #ffe4a3; color: #4d3400; border-color: #c78a00; }
+.pricing-label--flexible { background: #e0eff2; color: #134e5b; border-color: #82b4bf; }
+.price-row--deal { background: #fff9e8; border-left: 4px solid #dfad33; padding-left: 10px !important; padding-right: 10px !important; }
+.pricing-terms { margin: 14px 0 22px; font-size: 13px; line-height: 1.55; color: #57434c; }
+.annual-inquiry-box {
+  margin: 16px 0 34px;
+  padding: 24px 28px;
+  border: 2px solid #b8a3ae;
+  background: #faf5f7;
+}
+.annual-inquiry-box h3 { font-size: 1.2rem; margin-bottom: 8px; }
+.annual-inquiry-box p { margin: 0; line-height: 1.55; }
+.annual-inquiry-box a { display: inline-block; margin-top: 12px; color: #83183c; font-weight: 700; text-decoration: underline; }
