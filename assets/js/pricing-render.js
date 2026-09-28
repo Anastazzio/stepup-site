@@ -23,6 +23,13 @@
       renderGroups(Array.isArray(data.groups) ? data.groups : [], data);
       renderPayOnline("pricing-pay-top", data);
       renderPayOnline("pricing-pay-bottom", data);
+      if (listHost && listHost.querySelector(".price-row")) {
+        var printButton = document.getElementById("pricing-print-trigger");
+        if (printButton) {
+          printButton.hidden = false;
+          printButton.addEventListener("click", function () { window.print(); });
+        }
+      }
     })
     .catch(function () {
       /* leave whatever static markup (if any) was already in the page */
@@ -54,11 +61,22 @@
 
   function renderRow(row) {
     row = row || {};
-    var rowEl = el("div", "price-row" + (row.tbd ? " tbd" : ""));
+    var rowEl = el("div", "price-row" + (row.tbd ? " tbd" : "") +
+      (row.badge_tone === "deal" ? " price-row--deal" : ""));
     rowEl.appendChild(el("span", "q-num", row.qty || ""));
 
     var nameSpan = el("span", "p-name");
     nameSpan.appendChild(document.createTextNode(row.name || ""));
+    if (row.badge) {
+      nameSpan.appendChild(el("span",
+        "pricing-label pricing-label--" + (row.badge_tone === "deal" ? "deal" : "flexible"),
+        row.badge));
+    }
+    if (row.rule) {
+      nameSpan.appendChild(el("span",
+        "pricing-label pricing-label--" + (row.rule_tone === "with" ? "with" : "none"),
+        row.rule));
+    }
     if (row.note) {
       var small = document.createElement("small");
       small.textContent = row.note;
