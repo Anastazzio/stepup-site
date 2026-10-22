@@ -21,6 +21,7 @@ collections:
           - { label: "Άρθρα", name: "articles", widget: "list", label_singular: "Άρθρο", summary: "{{title}}", fields: [
               { label: "Αναγνωριστικό (id)", name: "id", widget: "string", hint: "Μοναδικό, μόνο λατινικά/παύλες, χωρίς κενά — π.χ. my-new-article. Χρησιμοποιείται στη διεύθυνση της σελίδας του άρθρου. Μην το αλλάξεις αφού δημοσιευτεί." },
               { label: "Τίτλος", name: "title", widget: "string" },
+              { label: "SEO title (προαιρετικό)", name: "seo_title", widget: "string", required: false, hint: "Χρησιμοποίησέ το μόνο όταν ο κανονικός τίτλος είναι πολύ μεγάλος. Ιδανικά έως περίπου 60 χαρακτήρες." },
               { label: "Περιγραφή (σύντομη, για την κάρτα)", name: "description", widget: "text" },
               { label: "Πλήρες κείμενο άρθρου", name: "body", widget: "markdown", required: false, hint: "Αν το αφήσεις κενό, στη σελίδα του άρθρου θα εμφανιστεί μόνο η σύντομη περιγραφή." },
               { label: "Κύρια εικόνα (featured);", name: "featured", widget: "boolean", default: false, hint: "Ενεργοποίησε το μόνο σε ΕΝΑ άρθρο — αυτό εμφανίζεται μεγάλο πάνω-πάνω." },
@@ -44,6 +45,7 @@ collections:
           - { label: "Άρθρα", name: "articles", widget: "list", label_singular: "Άρθρο", summary: "{{title}}", fields: [
               { label: "Αναγνωριστικό (id)", name: "id", widget: "string", hint: "Μοναδικό, μόνο λατινικά/παύλες, χωρίς κενά — π.χ. neo-arthro. Χρησιμοποιείται στη διεύθυνση της σελίδας του άρθρου. Μην το αλλάξεις αφού δημοσιευτεί." },
               { label: "Τίτλος", name: "title", widget: "string" },
+              { label: "SEO title (προαιρετικό)", name: "seo_title", widget: "string", required: false, hint: "Χρησιμοποίησέ το μόνο όταν ο κανονικός τίτλος είναι πολύ μεγάλος. Ιδανικά έως περίπου 60 χαρακτήρες." },
               { label: "Περιγραφή (σύντομη, για την κάρτα)", name: "description", widget: "text" },
               { label: "Πλήρες κείμενο άρθρου", name: "body", widget: "markdown", required: false, hint: "Αν το αφήσεις κενό, στη σελίδα του άρθρου θα εμφανιστεί μόνο η σύντομη περιγραφή." },
               { label: "Featured (μεγάλη κάρτα πάνω-πάνω)", name: "featured", widget: "boolean", default: false, hint: "Ενεργοποίησε το μόνο σε ΕΝΑ άρθρο." },

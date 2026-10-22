@@ -1,0 +1,15 @@
+# Netlify build settings for www.stepupdancegr.com
+#
+# The site is plain static HTML. The only build step regenerates the static
+# blog article pages (/blog/<id>/ and /el/blog/<id>/) and the blog part of
+# sitemap.xml from content/blog-en.json and content/blog-el.json, so that
+# articles added or edited in the CMS (/admin) appear on the live site.
+# If the generator finds a broken page it stops the build, and the previous
+# deploy stays live.
+
+[build]
+  command = "node scripts/generate-blog-pages.mjs"
+  publish = "."
+
+[build.environment]
+  NODE_VERSION = "22"

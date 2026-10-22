@@ -6,6 +6,7 @@
 # retired Wix pricing route -> current canonical pricing page
 /plans-pricing /pricing/ 301
 /plans-pricing/ /pricing/ 301
+/el/plans-pricing /el/pricing/ 301
 
 # old query-string article URLs -> crawlable static article pages
 /el/blog/post id=:id /el/blog/:id/ 301!

@@ -45,6 +45,8 @@ function materializeDataImage(article, lang) {
 }
 
 function pageTitle(article) {
+  const seoTitle = String(article.seo_title || "").trim();
+  if (seoTitle) return seoTitle;
   const title = String(article.title || "Step Up Dance Studio Blog").trim();
   return title.length <= 51 ? `${title} | STEP UP` : title;
 }
@@ -61,6 +63,29 @@ const articleIds = Object.fromEntries(
     new Set((content.articles || []).map((article) => article.id)),
   ]),
 );
+
+function hasSubstantialBody(article) {
+  return String(article.body || "")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&[a-z0-9#]+;/gi, " ")
+    .replace(/\s+/g, " ")
+    .trim().length > 0;
+}
+
+function assertGeneratedPage(html, { canonical, isIndexable, counterpartExists }) {
+  const checks = [
+    ["title", /<title>[^<]+<\/title>/i.test(html)],
+    ["viewport", /<meta\b(?=[^>]*\bname=["']viewport["'])[^>]*>/i.test(html)],
+    ["canonical", html.includes(`<link href="${canonical}" rel="canonical"/>`)],
+    ["hreflang", (html.match(/hreflang=/g) || []).length === (counterpartExists ? 3 : 1)],
+    ["single H1", (html.match(/<h1\b/g) || []).length === 1],
+    ["robots", html.includes(`<meta content="${isIndexable ? "index" : "noindex"}, follow" name="robots"/>`)]
+  ];
+  const failed = checks.filter(([, passed]) => !passed).map(([name]) => name);
+  if (failed.length) {
+    throw new Error(`Generated page validation failed for ${canonical}: ${failed.join(", ")}`);
+  }
+}
 
 for (const lang of ["en", "el"]) {
   const isGreek = lang === "el";
@@ -86,6 +111,7 @@ for (const lang of ["en", "el"]) {
     const title = pageTitle(article);
     const description = String(article.description || "").trim();
     const image = materializeDataImage(article, lang);
+    const isIndexable = hasSubstantialBody(article);
     const body = cleanInternalPostLinks(article.body || article.description || "", lang);
     const metaLine = [article.author, article.date_label, article.read_time].filter(Boolean).join(" · ");
 
@@ -156,8 +182,8 @@ for (const lang of ["en", "el"]) {
 
     let html = template
       .replace(/<title>[\s\S]*?<\/title>/, `<title>${escapeHtml(title)}</title>`)
-      .replace(/<meta content="[^"]*" name="description"\/>/, `<meta content="${escapeHtml(description)}" name="description"/>`)
-      .replace(/<meta content="(?:noindex|index), follow" name="robots"\/>/, '<meta content="index, follow" name="robots"/>')
+      .replace(/<meta\b(?=[^>]*\bname=["']description["'])[^>]*>/i, `<meta content="${escapeHtml(description)}" name="description"/>`)
+      .replace(/<meta content="(?:noindex|index), follow" name="robots"\/>/, `<meta content="${isIndexable ? "index" : "noindex"}, follow" name="robots"/>`)
       .replace(/<link href="https:\/\/www\.stepupdancegr\.com\/(el\/)?blog\/" rel="canonical"\/>/, `<link href="${canonical}" rel="canonical"/>\n${seoTags}`)
       .replace(/<main class="wrap">[\s\S]*?<\/main>/, articleMarkup)
       .replace(/\s*<script>window\.STEPUP_BLOG_LANG = "(?:en|el)";<\/script>/, "")
@@ -171,9 +197,10 @@ for (const lang of ["en", "el"]) {
     }
 
     const output = path.join(root, canonicalPath.slice(1), "index.html");
+    assertGeneratedPage(html, { canonical, isIndexable, counterpartExists });
     fs.mkdirSync(path.dirname(output), { recursive: true });
     fs.writeFileSync(output, html);
-    generatedUrls.push(canonical);
+    if (isIndexable) generatedUrls.push(canonical);
   }
 }
 
