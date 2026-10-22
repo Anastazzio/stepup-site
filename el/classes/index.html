@@ -485,7 +485,7 @@
 </div>
 <a class="members-link" href="https://app.stepupdancegr.com/member" target="_blank" rel="noopener noreferrer">Μέλη</a>
 </div>
-<a class="nav-cta" href="https://app.stepupdancegr.com/interest" target="_blank" rel="noopener noreferrer">Θέλω να ξεκινήσω</a>
+<a class="nav-cta" href="https://app.stepupdancegr.com/interest" target="_blank" rel="noopener noreferrer">Φόρμα ενδιαφέροντος</a>
 <button aria-controls="mobile-menu" aria-expanded="false" aria-label="Άνοιγμα μενού" class="menu-toggle" type="button">
 <span></span><span></span><span></span>
 </button>
@@ -507,7 +507,7 @@
 <a class="members-link" href="https://app.stepupdancegr.com/member" target="_blank" rel="noopener noreferrer">Μέλη</a>
 <a class="install-app-link" href="https://app.stepupdancegr.com/install" target="_blank" rel="noopener noreferrer">Εγκατάσταση STEP UP App</a>
 </div>
-<a class="mobile-cta" href="https://app.stepupdancegr.com/interest" target="_blank" rel="noopener noreferrer">Θέλω να ξεκινήσω</a>
+<a class="mobile-cta" href="https://app.stepupdancegr.com/interest" target="_blank" rel="noopener noreferrer">Φόρμα ενδιαφέροντος</a>
 </nav>
 </div>
 <header class="page-head wrap-wide">
@@ -535,7 +535,7 @@
 <div id="classes-list"></div>
 </section>
 </main>
-<section aria-labelledby="weekly-schedule-classes-el" class="stepup-schedule stepup-schedule--embedded">
+<section aria-labelledby="weekly-schedule-classes-el" class="stepup-schedule stepup-schedule--embedded" id="programma">
 <div class="stepup-schedule__shell">
 <header class="stepup-schedule__intro">
 <div class="stepup-schedule__eyebrow">Πρόγραμμα 2026–27 · Θεσσαλονίκη</div>
@@ -580,6 +580,21 @@
 <div class="stepup-schedule__actions"><a class="stepup-schedule__action" href="/el/pricing/">Δες τιμές και πακέτα</a><a class="stepup-schedule__action stepup-schedule__action--primary" href="https://app.stepupdancegr.com/interest" target="_blank" rel="noopener noreferrer">Δήλωσε ενδιαφέρον</a></div>
 </div>
 </section>
+<style id="schedule-anchor">#programma{scroll-margin-top:88px;}</style>
+<script id="schedule-anchor-fix">
+/* Κρατάει τη θέση στο #programma όταν η σελίδα ανοίγει με anchor: τα μαθήματα από πάνω φορτώνουν δυναμικά και μετακινούν το πρόγραμμα. */
+(function(){
+  var key="programma";
+  if(location.hash!=="#"+key) return;
+  var t=document.getElementById(key); if(!t) return;
+  var stop=false, until=Date.now()+5000;
+  function snap(){ if(stop||Date.now()>until) return; try{ t.scrollIntoView({behavior:"instant",block:"start"}); }catch(e){ t.scrollIntoView(true); } }
+  ["wheel","touchstart","keydown","mousedown"].forEach(function(e){ window.addEventListener(e,function(){stop=true;},{passive:true,once:true}); });
+  if("ResizeObserver" in window){ var ro=new ResizeObserver(snap); ro.observe(document.body); setTimeout(function(){ro.disconnect();},5000); }
+  window.addEventListener("load",function(){ snap(); setTimeout(snap,300); });
+  snap();
+})();
+</script>
 <script>window.STEPUP_LANG = "el";</script>
 <script src="/assets/js/site-notice-render.js" defer></script>
 <script src="/assets/js/classes-render.js?v=20260913-2" defer></script>
