@@ -181,6 +181,8 @@
     .btn-primary:hover{background:var(--fuchsia-light);}
     .btn-outline{border:1px solid rgba(255,255,255,.45);color:var(--white);padding:14px 29px;font-weight:600;font-size:14.5px;display:inline-block;letter-spacing:.2px;transition:.2s ease;}
     .btn-outline:hover{border-color:var(--yellow);color:var(--yellow);}
+    .btn-booking{background:var(--yellow);color:var(--black);}
+    .btn-booking:hover{background:var(--white);color:var(--black);}
     .btn-outline-dark{border:1px solid #b9b9b9;color:var(--black);padding:14px 29px;font-weight:600;font-size:14.5px;display:inline-block;letter-spacing:.2px;transition:.2s ease;}
     .btn-outline-dark:hover{border-color:var(--fuchsia);color:var(--fuchsia);}
 
@@ -332,6 +334,7 @@
     flex-wrap:wrap;
     gap:4px 8px;
   }
+  .bottom-bar .footer-staff-link{font-size:inherit;font-weight:500;padding:6px 8px;}
   @media(max-width:560px){
     .bottom-bar{justify-content:flex-start;line-height:1.7;}
   }
@@ -515,6 +518,7 @@
 <div class="btn-row">
 <a class="btn-primary" href="/pricing/">View prices &amp; packages</a>
 <a class="btn-outline" href="/classes/">All classes</a>
+<a class="btn-primary btn-booking" href="https://booking.stepupdancegr.com/">Book online</a>
 <a class="btn-interest-mobile" href="https://app.stepupdancegr.com/interest" target="_blank" rel="noopener noreferrer">Interest form</a>
 </div>
 </div>
@@ -697,7 +701,7 @@
 </ul>
 </div>
 </div>
-<div class="bottom-bar"><span>© 2026 Step Up Dance Studio</span><span class="powered-by"><span> · Powered by </span><a aria-label="LimeUp website" href="#">LimeUp</a></span></div>
+<div class="bottom-bar"><a class="footer-staff-link" href="https://booking.stepupdancegr.com/admin">Staff login</a><span>© 2026 Step Up Dance Studio</span><span class="powered-by"><span> · Powered by </span><a aria-label="LimeUp website" href="#">LimeUp</a></span></div>
 </div>
 </footer>
 <script>
